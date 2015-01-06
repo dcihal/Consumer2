@@ -25,5 +25,33 @@ public WebElement Manage;
     
     public WebElement CreateBudget;
     
+    @FindBy(how = How.CLASS_NAME, using = "button-header")
+    
+    public WebElement QuickPay;
+    
+    @FindBy(how = How.CLASS_NAME, using = "select2-chosen")
+    
+    public WebElement SelectRecipient;
+	
+    @FindBy(how = How.ID, using = "select2-result-label-8")
+
+    public WebElement MyCreditCardAccount;
+
+    @FindBy(how = How.NAME, using = "amount")
+
+    public WebElement Amount;
+    
+    @FindBy(how = How.NAME, using = "scheduledDate")
+
+    public WebElement QuickPayCalendar;
+    
+    @FindBy(how = How.CSS, using = "button.btn.btn-ok")
+
+    public WebElement QuickPaySubmit;
+    
+    @FindBy(how = How.CSS, using = "button.btn.btn-confirm")
+
+    public WebElement QuickPayConfirm;
+    
 	
 }

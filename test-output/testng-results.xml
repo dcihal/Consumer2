@@ -1,59 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="16" passed="16">
+<testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="D3 Regression Tests" duration-ms="48737" started-at="2015-01-06T20:30:57Z" finished-at="2015-01-06T20:31:45Z">
+  <suite name="D3AutomationDemo Tests" duration-ms="25591" started-at="2015-01-06T20:56:09Z" finished-at="2015-01-06T20:56:34Z">
     <groups>
       <group name="regression">
-        <method signature="D3AutomationDemo.verifyAccountsButton()[pri:0, instance:com.d3.endToEnd.D3AutomationDemo@cbc42f]" name="verifyAccountsButton" class="com.d3.endToEnd.D3AutomationDemo"/>
-        <method signature="D3AutomationDemo.verifyHelpButton()[pri:0, instance:com.d3.endToEnd.D3AutomationDemo@cbc42f]" name="verifyHelpButton" class="com.d3.endToEnd.D3AutomationDemo"/>
-        <method signature="D3AutomationDemo.verifyHomepageTitle()[pri:0, instance:com.d3.endToEnd.D3AutomationDemo@cbc42f]" name="verifyHomepageTitle" class="com.d3.endToEnd.D3AutomationDemo"/>
-        <method signature="D3AutomationDemo.verifyInvalidLogin(java.lang.String)[pri:0, instance:com.d3.endToEnd.D3AutomationDemo@cbc42f]" name="verifyInvalidLogin" class="com.d3.endToEnd.D3AutomationDemo"/>
-        <method signature="D3AutomationDemo.verifyMessagesButton()[pri:0, instance:com.d3.endToEnd.D3AutomationDemo@cbc42f]" name="verifyMessagesButton" class="com.d3.endToEnd.D3AutomationDemo"/>
-        <method signature="D3AutomationDemo.verifyMoneyMovementButton()[pri:0, instance:com.d3.endToEnd.D3AutomationDemo@cbc42f]" name="verifyMoneyMovementButton" class="com.d3.endToEnd.D3AutomationDemo"/>
-        <method signature="D3AutomationDemo.verifyPlanButton()[pri:0, instance:com.d3.endToEnd.D3AutomationDemo@cbc42f]" name="verifyPlanButton" class="com.d3.endToEnd.D3AutomationDemo"/>
-        <method signature="D3AutomationDemo.verifyPlanningButton()[pri:0, instance:com.d3.endToEnd.D3AutomationDemo@cbc42f]" name="verifyPlanningButton" class="com.d3.endToEnd.D3AutomationDemo"/>
-        <method signature="D3AutomationDemo.verifySecretQuestion(java.lang.String)[pri:0, instance:com.d3.endToEnd.D3AutomationDemo@cbc42f]" name="verifySecretQuestion" class="com.d3.endToEnd.D3AutomationDemo"/>
-        <method signature="D3AutomationDemo.verifySettingsButton()[pri:0, instance:com.d3.endToEnd.D3AutomationDemo@cbc42f]" name="verifySettingsButton" class="com.d3.endToEnd.D3AutomationDemo"/>
-        <method signature="D3AutomationDemo.verifyTransactionsButton()[pri:0, instance:com.d3.endToEnd.D3AutomationDemo@cbc42f]" name="verifyTransactionsButton" class="com.d3.endToEnd.D3AutomationDemo"/>
-        <method signature="D3AutomationDemo.verifyValidLogin(java.lang.String, java.lang.String)[pri:0, instance:com.d3.endToEnd.D3AutomationDemo@cbc42f]" name="verifyValidLogin" class="com.d3.endToEnd.D3AutomationDemo"/>
-        <method signature="lookAndFeel.verifyHomepageTitle()[pri:0, instance:com.d3.accounts.asset.lookAndFeel@1474c6c]" name="verifyHomepageTitle" class="com.d3.accounts.asset.lookAndFeel"/>
-        <method signature="lookAndFeel.verifyInvalidLogin(java.lang.String)[pri:0, instance:com.d3.accounts.asset.lookAndFeel@1474c6c]" name="verifyInvalidLogin" class="com.d3.accounts.asset.lookAndFeel"/>
-        <method signature="lookAndFeel.verifySecretQuestion(java.lang.String)[pri:0, instance:com.d3.accounts.asset.lookAndFeel@1474c6c]" name="verifySecretQuestion" class="com.d3.accounts.asset.lookAndFeel"/>
-        <method signature="lookAndFeel.verifyValidLogin(java.lang.String, java.lang.String)[pri:0, instance:com.d3.accounts.asset.lookAndFeel@1474c6c]" name="verifyValidLogin" class="com.d3.accounts.asset.lookAndFeel"/>
+        <method signature="QuickPayPaymentCurrentDate.verifyQuickPayCurrentDate(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.d3.endToEnd.QuickPayPaymentCurrentDate@1150435]" name="verifyQuickPayCurrentDate" class="com.d3.endToEnd.QuickPayPaymentCurrentDate"/>
       </group> <!-- regression -->
       <group name="smoke">
-        <method signature="D3AutomationDemo.verifyAccountsButton()[pri:0, instance:com.d3.endToEnd.D3AutomationDemo@cbc42f]" name="verifyAccountsButton" class="com.d3.endToEnd.D3AutomationDemo"/>
-        <method signature="D3AutomationDemo.verifyHelpButton()[pri:0, instance:com.d3.endToEnd.D3AutomationDemo@cbc42f]" name="verifyHelpButton" class="com.d3.endToEnd.D3AutomationDemo"/>
-        <method signature="D3AutomationDemo.verifyHomepageTitle()[pri:0, instance:com.d3.endToEnd.D3AutomationDemo@cbc42f]" name="verifyHomepageTitle" class="com.d3.endToEnd.D3AutomationDemo"/>
-        <method signature="D3AutomationDemo.verifyInvalidLogin(java.lang.String)[pri:0, instance:com.d3.endToEnd.D3AutomationDemo@cbc42f]" name="verifyInvalidLogin" class="com.d3.endToEnd.D3AutomationDemo"/>
-        <method signature="D3AutomationDemo.verifyMessagesButton()[pri:0, instance:com.d3.endToEnd.D3AutomationDemo@cbc42f]" name="verifyMessagesButton" class="com.d3.endToEnd.D3AutomationDemo"/>
-        <method signature="D3AutomationDemo.verifyMoneyMovementButton()[pri:0, instance:com.d3.endToEnd.D3AutomationDemo@cbc42f]" name="verifyMoneyMovementButton" class="com.d3.endToEnd.D3AutomationDemo"/>
-        <method signature="D3AutomationDemo.verifyPlanButton()[pri:0, instance:com.d3.endToEnd.D3AutomationDemo@cbc42f]" name="verifyPlanButton" class="com.d3.endToEnd.D3AutomationDemo"/>
-        <method signature="D3AutomationDemo.verifyPlanningButton()[pri:0, instance:com.d3.endToEnd.D3AutomationDemo@cbc42f]" name="verifyPlanningButton" class="com.d3.endToEnd.D3AutomationDemo"/>
-        <method signature="D3AutomationDemo.verifySecretQuestion(java.lang.String)[pri:0, instance:com.d3.endToEnd.D3AutomationDemo@cbc42f]" name="verifySecretQuestion" class="com.d3.endToEnd.D3AutomationDemo"/>
-        <method signature="D3AutomationDemo.verifySettingsButton()[pri:0, instance:com.d3.endToEnd.D3AutomationDemo@cbc42f]" name="verifySettingsButton" class="com.d3.endToEnd.D3AutomationDemo"/>
-        <method signature="D3AutomationDemo.verifyTransactionsButton()[pri:0, instance:com.d3.endToEnd.D3AutomationDemo@cbc42f]" name="verifyTransactionsButton" class="com.d3.endToEnd.D3AutomationDemo"/>
-        <method signature="D3AutomationDemo.verifyValidLogin(java.lang.String, java.lang.String)[pri:0, instance:com.d3.endToEnd.D3AutomationDemo@cbc42f]" name="verifyValidLogin" class="com.d3.endToEnd.D3AutomationDemo"/>
-        <method signature="lookAndFeel.verifyHomepageTitle()[pri:0, instance:com.d3.accounts.asset.lookAndFeel@1474c6c]" name="verifyHomepageTitle" class="com.d3.accounts.asset.lookAndFeel"/>
-        <method signature="lookAndFeel.verifyInvalidLogin(java.lang.String)[pri:0, instance:com.d3.accounts.asset.lookAndFeel@1474c6c]" name="verifyInvalidLogin" class="com.d3.accounts.asset.lookAndFeel"/>
-        <method signature="lookAndFeel.verifySecretQuestion(java.lang.String)[pri:0, instance:com.d3.accounts.asset.lookAndFeel@1474c6c]" name="verifySecretQuestion" class="com.d3.accounts.asset.lookAndFeel"/>
-        <method signature="lookAndFeel.verifyValidLogin(java.lang.String, java.lang.String)[pri:0, instance:com.d3.accounts.asset.lookAndFeel@1474c6c]" name="verifyValidLogin" class="com.d3.accounts.asset.lookAndFeel"/>
+        <method signature="QuickPayPaymentCurrentDate.verifyQuickPayCurrentDate(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.d3.endToEnd.QuickPayPaymentCurrentDate@1150435]" name="verifyQuickPayCurrentDate" class="com.d3.endToEnd.QuickPayPaymentCurrentDate"/>
       </group> <!-- smoke -->
-      <group name="accounts">
-        <method signature="lookAndFeel.verifyHomepageTitle()[pri:0, instance:com.d3.accounts.asset.lookAndFeel@1474c6c]" name="verifyHomepageTitle" class="com.d3.accounts.asset.lookAndFeel"/>
-        <method signature="lookAndFeel.verifyInvalidLogin(java.lang.String)[pri:0, instance:com.d3.accounts.asset.lookAndFeel@1474c6c]" name="verifyInvalidLogin" class="com.d3.accounts.asset.lookAndFeel"/>
-        <method signature="lookAndFeel.verifySecretQuestion(java.lang.String)[pri:0, instance:com.d3.accounts.asset.lookAndFeel@1474c6c]" name="verifySecretQuestion" class="com.d3.accounts.asset.lookAndFeel"/>
-        <method signature="lookAndFeel.verifyValidLogin(java.lang.String, java.lang.String)[pri:0, instance:com.d3.accounts.asset.lookAndFeel@1474c6c]" name="verifyValidLogin" class="com.d3.accounts.asset.lookAndFeel"/>
-      </group> <!-- accounts -->
     </groups>
-    <test name="Regression Tests" duration-ms="48737" started-at="2015-01-06T20:30:57Z" finished-at="2015-01-06T20:31:45Z">
-      <class name="com.d3.endToEnd.D3AutomationDemo">
-        <test-method status="PASS" signature="launchBrowser(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.d3.endToEnd.D3AutomationDemo@cbc42f]" name="launchBrowser" is-config="true" duration-ms="5408" started-at="2015-01-06T14:31:23Z" finished-at="2015-01-06T14:31:28Z">
+    <test name="Default test" duration-ms="25591" started-at="2015-01-06T20:56:09Z" finished-at="2015-01-06T20:56:34Z">
+      <class name="com.d3.endToEnd.QuickPayPaymentCurrentDate">
+        <test-method status="PASS" signature="launchBrowser(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.d3.endToEnd.QuickPayPaymentCurrentDate@1150435]" name="launchBrowser" is-config="true" duration-ms="9944" started-at="2015-01-06T14:56:09Z" finished-at="2015-01-06T14:56:19Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[CHROME]]>
+                <![CDATA[FIREFOX]]>
               </value>
             </param>
             <param index="1">
@@ -70,44 +34,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchBrowser -->
-        <test-method status="PASS" signature="verifyHomepageTitle()[pri:0, instance:com.d3.endToEnd.D3AutomationDemo@cbc42f]" name="verifyHomepageTitle" duration-ms="8" started-at="2015-01-06T14:31:28Z" finished-at="2015-01-06T14:31:28Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyHomepageTitle -->
-        <test-method status="PASS" signature="takeScreenShotOnFailure(org.testng.ITestResult)[pri:0, instance:com.d3.endToEnd.D3AutomationDemo@cbc42f]" name="takeScreenShotOnFailure" is-config="true" duration-ms="0" started-at="2015-01-06T14:31:28Z" finished-at="2015-01-06T14:31:28Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifyHomepageTitle status=SUCCESS method=D3AutomationDemo.verifyHomepageTitle()[pri:0, instance:com.d3.endToEnd.D3AutomationDemo@cbc42f] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- takeScreenShotOnFailure -->
-        <test-method status="PASS" signature="verifyInvalidLogin(java.lang.String)[pri:0, instance:com.d3.endToEnd.D3AutomationDemo@cbc42f]" name="verifyInvalidLogin" duration-ms="8605" started-at="2015-01-06T14:31:28Z" finished-at="2015-01-06T14:31:37Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[samueladamsiii]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyInvalidLogin -->
-        <test-method status="PASS" signature="takeScreenShotOnFailure(org.testng.ITestResult)[pri:0, instance:com.d3.endToEnd.D3AutomationDemo@cbc42f]" name="takeScreenShotOnFailure" is-config="true" duration-ms="0" started-at="2015-01-06T14:31:37Z" finished-at="2015-01-06T14:31:37Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifyInvalidLogin status=SUCCESS method=D3AutomationDemo.verifyInvalidLogin(java.lang.String)[pri:0, instance:com.d3.endToEnd.D3AutomationDemo@cbc42f] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- takeScreenShotOnFailure -->
-        <test-method status="PASS" signature="verifyValidLogin(java.lang.String, java.lang.String)[pri:0, instance:com.d3.endToEnd.D3AutomationDemo@cbc42f]" name="verifyValidLogin" duration-ms="188" started-at="2015-01-06T14:31:37Z" finished-at="2015-01-06T14:31:37Z">
+        <test-method status="PASS" signature="verifyQuickPayCurrentDate(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.d3.endToEnd.QuickPayPaymentCurrentDate@1150435]" name="verifyQuickPayCurrentDate" duration-ms="15438" started-at="2015-01-06T14:56:19Z" finished-at="2015-01-06T14:56:34Z">
           <params>
             <param index="0">
               <value>
@@ -117,283 +44,33 @@
             <param index="1">
               <value>
                 <![CDATA[password]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyValidLogin -->
-        <test-method status="PASS" signature="takeScreenShotOnFailure(org.testng.ITestResult)[pri:0, instance:com.d3.endToEnd.D3AutomationDemo@cbc42f]" name="takeScreenShotOnFailure" is-config="true" duration-ms="1" started-at="2015-01-06T14:31:37Z" finished-at="2015-01-06T14:31:37Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifyValidLogin status=SUCCESS method=D3AutomationDemo.verifyValidLogin(java.lang.String, java.lang.String)[pri:0, instance:com.d3.endToEnd.D3AutomationDemo@cbc42f] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- takeScreenShotOnFailure -->
-        <test-method status="PASS" signature="verifySecretQuestion(java.lang.String)[pri:0, instance:com.d3.endToEnd.D3AutomationDemo@cbc42f]" name="verifySecretQuestion" duration-ms="2230" started-at="2015-01-06T14:31:37Z" finished-at="2015-01-06T14:31:39Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[denver]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifySecretQuestion -->
-        <test-method status="PASS" signature="takeScreenShotOnFailure(org.testng.ITestResult)[pri:0, instance:com.d3.endToEnd.D3AutomationDemo@cbc42f]" name="takeScreenShotOnFailure" is-config="true" duration-ms="0" started-at="2015-01-06T14:31:39Z" finished-at="2015-01-06T14:31:39Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifySecretQuestion status=SUCCESS method=D3AutomationDemo.verifySecretQuestion(java.lang.String)[pri:0, instance:com.d3.endToEnd.D3AutomationDemo@cbc42f] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- takeScreenShotOnFailure -->
-        <test-method status="PASS" signature="verifyPlanButton()[pri:0, instance:com.d3.endToEnd.D3AutomationDemo@cbc42f]" name="verifyPlanButton" duration-ms="245" started-at="2015-01-06T14:31:39Z" finished-at="2015-01-06T14:31:40Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyPlanButton -->
-        <test-method status="PASS" signature="verifyMessagesButton()[pri:0, instance:com.d3.endToEnd.D3AutomationDemo@cbc42f]" name="verifyMessagesButton" duration-ms="172" started-at="2015-01-06T14:31:40Z" finished-at="2015-01-06T14:31:40Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyMessagesButton -->
-        <test-method status="PASS" signature="takeScreenShotOnFailure(org.testng.ITestResult)[pri:0, instance:com.d3.endToEnd.D3AutomationDemo@cbc42f]" name="takeScreenShotOnFailure" is-config="true" duration-ms="0" started-at="2015-01-06T14:31:40Z" finished-at="2015-01-06T14:31:40Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifyPlanButton status=SUCCESS method=D3AutomationDemo.verifyPlanButton()[pri:0, instance:com.d3.endToEnd.D3AutomationDemo@cbc42f] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- takeScreenShotOnFailure -->
-        <test-method status="PASS" signature="takeScreenShotOnFailure(org.testng.ITestResult)[pri:0, instance:com.d3.endToEnd.D3AutomationDemo@cbc42f]" name="takeScreenShotOnFailure" is-config="true" duration-ms="0" started-at="2015-01-06T14:31:40Z" finished-at="2015-01-06T14:31:40Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifyMessagesButton status=SUCCESS method=D3AutomationDemo.verifyMessagesButton()[pri:0, instance:com.d3.endToEnd.D3AutomationDemo@cbc42f] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- takeScreenShotOnFailure -->
-        <test-method status="PASS" signature="verifyAccountsButton()[pri:0, instance:com.d3.endToEnd.D3AutomationDemo@cbc42f]" name="verifyAccountsButton" duration-ms="1218" started-at="2015-01-06T14:31:40Z" finished-at="2015-01-06T14:31:41Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyAccountsButton -->
-        <test-method status="PASS" signature="takeScreenShotOnFailure(org.testng.ITestResult)[pri:0, instance:com.d3.endToEnd.D3AutomationDemo@cbc42f]" name="takeScreenShotOnFailure" is-config="true" duration-ms="0" started-at="2015-01-06T14:31:41Z" finished-at="2015-01-06T14:31:41Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifyAccountsButton status=SUCCESS method=D3AutomationDemo.verifyAccountsButton()[pri:0, instance:com.d3.endToEnd.D3AutomationDemo@cbc42f] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- takeScreenShotOnFailure -->
-        <test-method status="PASS" signature="verifyTransactionsButton()[pri:0, instance:com.d3.endToEnd.D3AutomationDemo@cbc42f]" name="verifyTransactionsButton" duration-ms="205" started-at="2015-01-06T14:31:41Z" finished-at="2015-01-06T14:31:41Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyTransactionsButton -->
-        <test-method status="PASS" signature="takeScreenShotOnFailure(org.testng.ITestResult)[pri:0, instance:com.d3.endToEnd.D3AutomationDemo@cbc42f]" name="takeScreenShotOnFailure" is-config="true" duration-ms="1" started-at="2015-01-06T14:31:41Z" finished-at="2015-01-06T14:31:41Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifyTransactionsButton status=SUCCESS method=D3AutomationDemo.verifyTransactionsButton()[pri:0, instance:com.d3.endToEnd.D3AutomationDemo@cbc42f] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- takeScreenShotOnFailure -->
-        <test-method status="PASS" signature="verifyMoneyMovementButton()[pri:0, instance:com.d3.endToEnd.D3AutomationDemo@cbc42f]" name="verifyMoneyMovementButton" duration-ms="1121" started-at="2015-01-06T14:31:41Z" finished-at="2015-01-06T14:31:42Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyMoneyMovementButton -->
-        <test-method status="PASS" signature="verifyPlanningButton()[pri:0, instance:com.d3.endToEnd.D3AutomationDemo@cbc42f]" name="verifyPlanningButton" duration-ms="1397" started-at="2015-01-06T14:31:42Z" finished-at="2015-01-06T14:31:44Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyPlanningButton -->
-        <test-method status="PASS" signature="takeScreenShotOnFailure(org.testng.ITestResult)[pri:0, instance:com.d3.endToEnd.D3AutomationDemo@cbc42f]" name="takeScreenShotOnFailure" is-config="true" duration-ms="0" started-at="2015-01-06T14:31:42Z" finished-at="2015-01-06T14:31:42Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifyMoneyMovementButton status=SUCCESS method=D3AutomationDemo.verifyMoneyMovementButton()[pri:0, instance:com.d3.endToEnd.D3AutomationDemo@cbc42f] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- takeScreenShotOnFailure -->
-        <test-method status="PASS" signature="takeScreenShotOnFailure(org.testng.ITestResult)[pri:0, instance:com.d3.endToEnd.D3AutomationDemo@cbc42f]" name="takeScreenShotOnFailure" is-config="true" duration-ms="0" started-at="2015-01-06T14:31:44Z" finished-at="2015-01-06T14:31:44Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifyPlanningButton status=SUCCESS method=D3AutomationDemo.verifyPlanningButton()[pri:0, instance:com.d3.endToEnd.D3AutomationDemo@cbc42f] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- takeScreenShotOnFailure -->
-        <test-method status="PASS" signature="verifyHelpButton()[pri:0, instance:com.d3.endToEnd.D3AutomationDemo@cbc42f]" name="verifyHelpButton" duration-ms="305" started-at="2015-01-06T14:31:44Z" finished-at="2015-01-06T14:31:44Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyHelpButton -->
-        <test-method status="PASS" signature="takeScreenShotOnFailure(org.testng.ITestResult)[pri:0, instance:com.d3.endToEnd.D3AutomationDemo@cbc42f]" name="takeScreenShotOnFailure" is-config="true" duration-ms="1" started-at="2015-01-06T14:31:44Z" finished-at="2015-01-06T14:31:44Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifyHelpButton status=SUCCESS method=D3AutomationDemo.verifyHelpButton()[pri:0, instance:com.d3.endToEnd.D3AutomationDemo@cbc42f] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- takeScreenShotOnFailure -->
-        <test-method status="PASS" signature="verifySettingsButton()[pri:0, instance:com.d3.endToEnd.D3AutomationDemo@cbc42f]" name="verifySettingsButton" duration-ms="274" started-at="2015-01-06T14:31:44Z" finished-at="2015-01-06T14:31:44Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifySettingsButton -->
-        <test-method status="PASS" signature="takeScreenShotOnFailure(org.testng.ITestResult)[pri:0, instance:com.d3.endToEnd.D3AutomationDemo@cbc42f]" name="takeScreenShotOnFailure" is-config="true" duration-ms="0" started-at="2015-01-06T14:31:44Z" finished-at="2015-01-06T14:31:44Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifySettingsButton status=SUCCESS method=D3AutomationDemo.verifySettingsButton()[pri:0, instance:com.d3.endToEnd.D3AutomationDemo@cbc42f] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- takeScreenShotOnFailure -->
-        <test-method status="PASS" signature="terminateBrowser()[pri:0, instance:com.d3.endToEnd.D3AutomationDemo@cbc42f]" name="terminateBrowser" is-config="true" duration-ms="1155" started-at="2015-01-06T14:31:44Z" finished-at="2015-01-06T14:31:45Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- terminateBrowser -->
-      </class> <!-- com.d3.endToEnd.D3AutomationDemo -->
-      <class name="com.d3.accounts.asset.lookAndFeel">
-        <test-method status="PASS" signature="launchBrowser(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.d3.accounts.asset.lookAndFeel@1474c6c]" name="launchBrowser" is-config="true" duration-ms="7199" started-at="2015-01-06T14:30:57Z" finished-at="2015-01-06T14:31:04Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[CHROME]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[30]]>
               </value>
             </param>
             <param index="2">
               <value>
-                <![CDATA[https://fi1-qa4.dev.d3banking.com/]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchBrowser -->
-        <test-method status="PASS" signature="verifyHomepageTitle()[pri:0, instance:com.d3.accounts.asset.lookAndFeel@1474c6c]" name="verifyHomepageTitle" duration-ms="14" started-at="2015-01-06T14:31:04Z" finished-at="2015-01-06T14:31:04Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyHomepageTitle -->
-        <test-method status="PASS" signature="takeScreenShotOnFailure(org.testng.ITestResult)[pri:0, instance:com.d3.accounts.asset.lookAndFeel@1474c6c]" name="takeScreenShotOnFailure" is-config="true" duration-ms="0" started-at="2015-01-06T14:31:04Z" finished-at="2015-01-06T14:31:04Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifyHomepageTitle status=SUCCESS method=lookAndFeel.verifyHomepageTitle()[pri:0, instance:com.d3.accounts.asset.lookAndFeel@1474c6c] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- takeScreenShotOnFailure -->
-        <test-method status="PASS" signature="verifyInvalidLogin(java.lang.String)[pri:0, instance:com.d3.accounts.asset.lookAndFeel@1474c6c]" name="verifyInvalidLogin" duration-ms="15496" started-at="2015-01-06T14:31:04Z" finished-at="2015-01-06T14:31:19Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[samueladamsiii]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyInvalidLogin -->
-        <test-method status="PASS" signature="verifyValidLogin(java.lang.String, java.lang.String)[pri:0, instance:com.d3.accounts.asset.lookAndFeel@1474c6c]" name="verifyValidLogin" duration-ms="188" started-at="2015-01-06T14:31:19Z" finished-at="2015-01-06T14:31:20Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[samueladamsiii]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[password]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyValidLogin -->
-        <test-method status="PASS" signature="takeScreenShotOnFailure(org.testng.ITestResult)[pri:0, instance:com.d3.accounts.asset.lookAndFeel@1474c6c]" name="takeScreenShotOnFailure" is-config="true" duration-ms="0" started-at="2015-01-06T14:31:19Z" finished-at="2015-01-06T14:31:19Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifyInvalidLogin status=SUCCESS method=lookAndFeel.verifyInvalidLogin(java.lang.String)[pri:0, instance:com.d3.accounts.asset.lookAndFeel@1474c6c] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- takeScreenShotOnFailure -->
-        <test-method status="PASS" signature="verifySecretQuestion(java.lang.String)[pri:0, instance:com.d3.accounts.asset.lookAndFeel@1474c6c]" name="verifySecretQuestion" duration-ms="2147" started-at="2015-01-06T14:31:20Z" finished-at="2015-01-06T14:31:22Z">
-          <params>
-            <param index="0">
-              <value>
                 <![CDATA[denver]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifySecretQuestion -->
-        <test-method status="PASS" signature="takeScreenShotOnFailure(org.testng.ITestResult)[pri:0, instance:com.d3.accounts.asset.lookAndFeel@1474c6c]" name="takeScreenShotOnFailure" is-config="true" duration-ms="0" started-at="2015-01-06T14:31:20Z" finished-at="2015-01-06T14:31:20Z">
+        </test-method> <!-- verifyQuickPayCurrentDate -->
+        <test-method status="PASS" signature="takeScreenShotOnFailure(org.testng.ITestResult)[pri:0, instance:com.d3.endToEnd.QuickPayPaymentCurrentDate@1150435]" name="takeScreenShotOnFailure" is-config="true" duration-ms="0" started-at="2015-01-06T14:56:34Z" finished-at="2015-01-06T14:56:34Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifyValidLogin status=SUCCESS method=lookAndFeel.verifyValidLogin(java.lang.String, java.lang.String)[pri:0, instance:com.d3.accounts.asset.lookAndFeel@1474c6c] output={null}]]]>
+                <![CDATA[[TestResult name=verifyQuickPayCurrentDate status=SUCCESS method=QuickPayPaymentCurrentDate.verifyQuickPayCurrentDate(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.d3.endToEnd.QuickPayPaymentCurrentDate@1150435] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- takeScreenShotOnFailure -->
-        <test-method status="PASS" signature="terminateBrowser()[pri:0, instance:com.d3.accounts.asset.lookAndFeel@1474c6c]" name="terminateBrowser" is-config="true" duration-ms="1138" started-at="2015-01-06T14:31:22Z" finished-at="2015-01-06T14:31:23Z">
+        <test-method status="PASS" signature="terminateBrowser()[pri:0, instance:com.d3.endToEnd.QuickPayPaymentCurrentDate@1150435]" name="terminateBrowser" is-config="true" duration-ms="197" started-at="2015-01-06T14:56:34Z" finished-at="2015-01-06T14:56:34Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- terminateBrowser -->
-        <test-method status="PASS" signature="takeScreenShotOnFailure(org.testng.ITestResult)[pri:0, instance:com.d3.accounts.asset.lookAndFeel@1474c6c]" name="takeScreenShotOnFailure" is-config="true" duration-ms="0" started-at="2015-01-06T14:31:22Z" finished-at="2015-01-06T14:31:22Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifySecretQuestion status=SUCCESS method=lookAndFeel.verifySecretQuestion(java.lang.String)[pri:0, instance:com.d3.accounts.asset.lookAndFeel@1474c6c] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- takeScreenShotOnFailure -->
-      </class> <!-- com.d3.accounts.asset.lookAndFeel -->
-    </test> <!-- Regression Tests -->
-  </suite> <!-- D3 Regression Tests -->
+      </class> <!-- com.d3.endToEnd.QuickPayPaymentCurrentDate -->
+    </test> <!-- Default test -->
+  </suite> <!-- D3AutomationDemo Tests -->
 </testng-results>
