@@ -5,9 +5,12 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-import com.d3.dashboard.accountsMapping;
-
 public class accountsActions {
+	
+    public WebDriver Driver;
+    public String TimeToWait; 
+    public accountsMapping Mapping;
+    public WebDriverWait wait;
 	
     public void init(WebDriver driver, Long timeout)
     {

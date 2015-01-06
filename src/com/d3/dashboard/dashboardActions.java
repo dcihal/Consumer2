@@ -9,6 +9,12 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class dashboardActions {
 	
+    public WebDriver Driver;
+    public String TimeToWait; 
+    public dashboardMapping Mapping;
+    public WebDriverWait wait;
+	
+	
     public void init(WebDriver driver, Long timeout)
     {
 

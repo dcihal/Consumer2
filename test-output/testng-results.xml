@@ -1,0 +1,686 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="12" total="12" passed="0">
+  <reporter-output>
+  </reporter-output>
+  <suite name="D3AutomationDemo Tests" duration-ms="29445" started-at="2015-01-06T19:35:49Z" finished-at="2015-01-06T19:36:19Z">
+    <groups>
+      <group name="regression">
+        <method signature="D3AutomationDemo.verifyAccountsButton()[pri:0, instance:com.d3.endToEnd.D3AutomationDemo@53fd30]" name="verifyAccountsButton" class="com.d3.endToEnd.D3AutomationDemo"/>
+        <method signature="D3AutomationDemo.verifyHelpButton()[pri:0, instance:com.d3.endToEnd.D3AutomationDemo@53fd30]" name="verifyHelpButton" class="com.d3.endToEnd.D3AutomationDemo"/>
+        <method signature="D3AutomationDemo.verifyHomepageTitle()[pri:0, instance:com.d3.endToEnd.D3AutomationDemo@53fd30]" name="verifyHomepageTitle" class="com.d3.endToEnd.D3AutomationDemo"/>
+        <method signature="D3AutomationDemo.verifyInvalidLogin(java.lang.String)[pri:0, instance:com.d3.endToEnd.D3AutomationDemo@53fd30]" name="verifyInvalidLogin" class="com.d3.endToEnd.D3AutomationDemo"/>
+        <method signature="D3AutomationDemo.verifyMessagesButton()[pri:0, instance:com.d3.endToEnd.D3AutomationDemo@53fd30]" name="verifyMessagesButton" class="com.d3.endToEnd.D3AutomationDemo"/>
+        <method signature="D3AutomationDemo.verifyMoneyMovementButton()[pri:0, instance:com.d3.endToEnd.D3AutomationDemo@53fd30]" name="verifyMoneyMovementButton" class="com.d3.endToEnd.D3AutomationDemo"/>
+        <method signature="D3AutomationDemo.verifyPlanButton()[pri:0, instance:com.d3.endToEnd.D3AutomationDemo@53fd30]" name="verifyPlanButton" class="com.d3.endToEnd.D3AutomationDemo"/>
+        <method signature="D3AutomationDemo.verifyPlanningButton()[pri:0, instance:com.d3.endToEnd.D3AutomationDemo@53fd30]" name="verifyPlanningButton" class="com.d3.endToEnd.D3AutomationDemo"/>
+        <method signature="D3AutomationDemo.verifySecretQuestion(java.lang.String)[pri:0, instance:com.d3.endToEnd.D3AutomationDemo@53fd30]" name="verifySecretQuestion" class="com.d3.endToEnd.D3AutomationDemo"/>
+        <method signature="D3AutomationDemo.verifySettingsButton()[pri:0, instance:com.d3.endToEnd.D3AutomationDemo@53fd30]" name="verifySettingsButton" class="com.d3.endToEnd.D3AutomationDemo"/>
+        <method signature="D3AutomationDemo.verifyTransactionsButton()[pri:0, instance:com.d3.endToEnd.D3AutomationDemo@53fd30]" name="verifyTransactionsButton" class="com.d3.endToEnd.D3AutomationDemo"/>
+        <method signature="D3AutomationDemo.verifyValidLogin(java.lang.String, java.lang.String)[pri:0, instance:com.d3.endToEnd.D3AutomationDemo@53fd30]" name="verifyValidLogin" class="com.d3.endToEnd.D3AutomationDemo"/>
+      </group> <!-- regression -->
+      <group name="smoketest">
+        <method signature="D3AutomationDemo.verifyAccountsButton()[pri:0, instance:com.d3.endToEnd.D3AutomationDemo@53fd30]" name="verifyAccountsButton" class="com.d3.endToEnd.D3AutomationDemo"/>
+        <method signature="D3AutomationDemo.verifyHelpButton()[pri:0, instance:com.d3.endToEnd.D3AutomationDemo@53fd30]" name="verifyHelpButton" class="com.d3.endToEnd.D3AutomationDemo"/>
+        <method signature="D3AutomationDemo.verifyHomepageTitle()[pri:0, instance:com.d3.endToEnd.D3AutomationDemo@53fd30]" name="verifyHomepageTitle" class="com.d3.endToEnd.D3AutomationDemo"/>
+        <method signature="D3AutomationDemo.verifyInvalidLogin(java.lang.String)[pri:0, instance:com.d3.endToEnd.D3AutomationDemo@53fd30]" name="verifyInvalidLogin" class="com.d3.endToEnd.D3AutomationDemo"/>
+        <method signature="D3AutomationDemo.verifyMessagesButton()[pri:0, instance:com.d3.endToEnd.D3AutomationDemo@53fd30]" name="verifyMessagesButton" class="com.d3.endToEnd.D3AutomationDemo"/>
+        <method signature="D3AutomationDemo.verifyMoneyMovementButton()[pri:0, instance:com.d3.endToEnd.D3AutomationDemo@53fd30]" name="verifyMoneyMovementButton" class="com.d3.endToEnd.D3AutomationDemo"/>
+        <method signature="D3AutomationDemo.verifyPlanButton()[pri:0, instance:com.d3.endToEnd.D3AutomationDemo@53fd30]" name="verifyPlanButton" class="com.d3.endToEnd.D3AutomationDemo"/>
+        <method signature="D3AutomationDemo.verifyPlanningButton()[pri:0, instance:com.d3.endToEnd.D3AutomationDemo@53fd30]" name="verifyPlanningButton" class="com.d3.endToEnd.D3AutomationDemo"/>
+        <method signature="D3AutomationDemo.verifySecretQuestion(java.lang.String)[pri:0, instance:com.d3.endToEnd.D3AutomationDemo@53fd30]" name="verifySecretQuestion" class="com.d3.endToEnd.D3AutomationDemo"/>
+        <method signature="D3AutomationDemo.verifySettingsButton()[pri:0, instance:com.d3.endToEnd.D3AutomationDemo@53fd30]" name="verifySettingsButton" class="com.d3.endToEnd.D3AutomationDemo"/>
+        <method signature="D3AutomationDemo.verifyTransactionsButton()[pri:0, instance:com.d3.endToEnd.D3AutomationDemo@53fd30]" name="verifyTransactionsButton" class="com.d3.endToEnd.D3AutomationDemo"/>
+        <method signature="D3AutomationDemo.verifyValidLogin(java.lang.String, java.lang.String)[pri:0, instance:com.d3.endToEnd.D3AutomationDemo@53fd30]" name="verifyValidLogin" class="com.d3.endToEnd.D3AutomationDemo"/>
+      </group> <!-- smoketest -->
+    </groups>
+    <test name="Default test" duration-ms="29445" started-at="2015-01-06T19:35:49Z" finished-at="2015-01-06T19:36:19Z">
+      <class name="com.d3.endToEnd.D3AutomationDemo">
+        <test-method status="PASS" signature="initTestRails(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.d3.endToEnd.D3AutomationDemo@53fd30]" name="initTestRails" is-config="true" duration-ms="8" started-at="2015-01-06T13:35:49Z" finished-at="2015-01-06T13:35:49Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://lodo.testrail.com/]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[dcihal@d3banking.com]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[D3B@nk!ng]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initTestRails -->
+        <test-method status="PASS" signature="launchBrowser(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.d3.endToEnd.D3AutomationDemo@53fd30]" name="launchBrowser" is-config="true" duration-ms="6055" started-at="2015-01-06T13:35:49Z" finished-at="2015-01-06T13:35:55Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[CHROME]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[30]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[https://fi1-qa4.dev.d3banking.com/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method status="FAIL" signature="verifyHomepageTitle()[pri:0, instance:com.d3.endToEnd.D3AutomationDemo@53fd30]" name="verifyHomepageTitle" duration-ms="7" started-at="2015-01-06T13:35:55Z" finished-at="2015-01-06T13:35:55Z">
+          <exception class="org.openqa.selenium.NotFoundException">
+            <message>
+              <![CDATA[FAIL.
+Build info: version: '2.44.0', revision: '76d78cf', time: '2014-10-23 20:03:00'
+System info: host: 'D3-Cihal', ip: '192.168.30.13', os.name: 'Windows 8.1', os.arch: 'x86', os.version: '6.3', java.version: '1.8.0_25'
+Driver info: driver.version: unknown]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NotFoundException: FAIL.
+Build info: version: '2.44.0', revision: '76d78cf', time: '2014-10-23 20:03:00'
+System info: host: 'D3-Cihal', ip: '192.168.30.13', os.name: 'Windows 8.1', os.arch: 'x86', os.version: '6.3', java.version: '1.8.0_25'
+Driver info: driver.version: unknown
+	at com.d3.login.loginActions.veriyHomePage(loginActions.java:47)
+	at com.d3.endToEnd.D3AutomationDemo.verifyHomepageTitle(D3AutomationDemo.java:91)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NotFoundException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyHomepageTitle -->
+        <test-method status="PASS" signature="takeScreenShotOnFailure(org.testng.ITestResult)[pri:0, instance:com.d3.endToEnd.D3AutomationDemo@53fd30]" name="takeScreenShotOnFailure" is-config="true" duration-ms="246" started-at="2015-01-06T13:35:55Z" finished-at="2015-01-06T13:35:56Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyHomepageTitle status=FAILURE method=D3AutomationDemo.verifyHomepageTitle()[pri:0, instance:com.d3.endToEnd.D3AutomationDemo@53fd30] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeScreenShotOnFailure -->
+        <test-method status="FAIL" signature="verifyInvalidLogin(java.lang.String)[pri:0, instance:com.d3.endToEnd.D3AutomationDemo@53fd30]" name="verifyInvalidLogin" duration-ms="1" started-at="2015-01-06T13:35:56Z" finished-at="2015-01-06T13:35:56Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[samueladamsiii]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+	at com.d3.login.loginActions.loginUn(loginActions.java:53)
+	at com.d3.endToEnd.D3AutomationDemo.verifyInvalidLogin(D3AutomationDemo.java:99)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyInvalidLogin -->
+        <test-method status="PASS" signature="takeScreenShotOnFailure(org.testng.ITestResult)[pri:0, instance:com.d3.endToEnd.D3AutomationDemo@53fd30]" name="takeScreenShotOnFailure" is-config="true" duration-ms="163" started-at="2015-01-06T13:35:56Z" finished-at="2015-01-06T13:35:56Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyInvalidLogin status=FAILURE method=D3AutomationDemo.verifyInvalidLogin(java.lang.String)[pri:0, instance:com.d3.endToEnd.D3AutomationDemo@53fd30] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeScreenShotOnFailure -->
+        <test-method status="FAIL" signature="verifyValidLogin(java.lang.String, java.lang.String)[pri:0, instance:com.d3.endToEnd.D3AutomationDemo@53fd30]" name="verifyValidLogin" duration-ms="19926" started-at="2015-01-06T13:35:56Z" finished-at="2015-01-06T13:36:16Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[samueladamsiii]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[password]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+	at com.d3.login.loginActions.loginUn(loginActions.java:53)
+	at com.d3.endToEnd.D3AutomationDemo.verifyValidLogin(D3AutomationDemo.java:115)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyValidLogin -->
+        <test-method status="PASS" signature="takeScreenShotOnFailure(org.testng.ITestResult)[pri:0, instance:com.d3.endToEnd.D3AutomationDemo@53fd30]" name="takeScreenShotOnFailure" is-config="true" duration-ms="205" started-at="2015-01-06T13:36:16Z" finished-at="2015-01-06T13:36:16Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyValidLogin status=FAILURE method=D3AutomationDemo.verifyValidLogin(java.lang.String, java.lang.String)[pri:0, instance:com.d3.endToEnd.D3AutomationDemo@53fd30] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeScreenShotOnFailure -->
+        <test-method status="FAIL" signature="verifySecretQuestion(java.lang.String)[pri:0, instance:com.d3.endToEnd.D3AutomationDemo@53fd30]" name="verifySecretQuestion" duration-ms="0" started-at="2015-01-06T13:36:16Z" finished-at="2015-01-06T13:36:16Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[denver]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+	at com.d3.login.loginActions.secretQuestion(loginActions.java:73)
+	at com.d3.endToEnd.D3AutomationDemo.verifySecretQuestion(D3AutomationDemo.java:125)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySecretQuestion -->
+        <test-method status="PASS" signature="takeScreenShotOnFailure(org.testng.ITestResult)[pri:0, instance:com.d3.endToEnd.D3AutomationDemo@53fd30]" name="takeScreenShotOnFailure" is-config="true" duration-ms="189" started-at="2015-01-06T13:36:16Z" finished-at="2015-01-06T13:36:16Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifySecretQuestion status=FAILURE method=D3AutomationDemo.verifySecretQuestion(java.lang.String)[pri:0, instance:com.d3.endToEnd.D3AutomationDemo@53fd30] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeScreenShotOnFailure -->
+        <test-method status="FAIL" signature="verifyPlanButton()[pri:0, instance:com.d3.endToEnd.D3AutomationDemo@53fd30]" name="verifyPlanButton" duration-ms="1" started-at="2015-01-06T13:36:16Z" finished-at="2015-01-06T13:36:16Z">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+	at com.d3.dashboard.dashboardActions.planButton(dashboardActions.java:30)
+	at com.d3.endToEnd.D3AutomationDemo.verifyPlanButton(D3AutomationDemo.java:147)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyPlanButton -->
+        <test-method status="PASS" signature="takeScreenShotOnFailure(org.testng.ITestResult)[pri:0, instance:com.d3.endToEnd.D3AutomationDemo@53fd30]" name="takeScreenShotOnFailure" is-config="true" duration-ms="187" started-at="2015-01-06T13:36:16Z" finished-at="2015-01-06T13:36:16Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyPlanButton status=FAILURE method=D3AutomationDemo.verifyPlanButton()[pri:0, instance:com.d3.endToEnd.D3AutomationDemo@53fd30] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeScreenShotOnFailure -->
+        <test-method status="FAIL" signature="verifyMessagesButton()[pri:0, instance:com.d3.endToEnd.D3AutomationDemo@53fd30]" name="verifyMessagesButton" duration-ms="1" started-at="2015-01-06T13:36:16Z" finished-at="2015-01-06T13:36:16Z">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+	at com.d3.messages.messagesActions.messagesButton(messagesActions.java:29)
+	at com.d3.endToEnd.D3AutomationDemo.verifyMessagesButton(D3AutomationDemo.java:168)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyMessagesButton -->
+        <test-method status="PASS" signature="takeScreenShotOnFailure(org.testng.ITestResult)[pri:0, instance:com.d3.endToEnd.D3AutomationDemo@53fd30]" name="takeScreenShotOnFailure" is-config="true" duration-ms="180" started-at="2015-01-06T13:36:16Z" finished-at="2015-01-06T13:36:17Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyMessagesButton status=FAILURE method=D3AutomationDemo.verifyMessagesButton()[pri:0, instance:com.d3.endToEnd.D3AutomationDemo@53fd30] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeScreenShotOnFailure -->
+        <test-method status="FAIL" signature="verifyAccountsButton()[pri:0, instance:com.d3.endToEnd.D3AutomationDemo@53fd30]" name="verifyAccountsButton" duration-ms="1" started-at="2015-01-06T13:36:17Z" finished-at="2015-01-06T13:36:17Z">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+	at com.d3.accounts.accountsActions.accountsButton(accountsActions.java:27)
+	at com.d3.endToEnd.D3AutomationDemo.verifyAccountsButton(D3AutomationDemo.java:176)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyAccountsButton -->
+        <test-method status="PASS" signature="takeScreenShotOnFailure(org.testng.ITestResult)[pri:0, instance:com.d3.endToEnd.D3AutomationDemo@53fd30]" name="takeScreenShotOnFailure" is-config="true" duration-ms="182" started-at="2015-01-06T13:36:17Z" finished-at="2015-01-06T13:36:17Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyAccountsButton status=FAILURE method=D3AutomationDemo.verifyAccountsButton()[pri:0, instance:com.d3.endToEnd.D3AutomationDemo@53fd30] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeScreenShotOnFailure -->
+        <test-method status="FAIL" signature="verifyTransactionsButton()[pri:0, instance:com.d3.endToEnd.D3AutomationDemo@53fd30]" name="verifyTransactionsButton" duration-ms="1" started-at="2015-01-06T13:36:17Z" finished-at="2015-01-06T13:36:17Z">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+	at com.d3.transactions.transactionsActions.transactionsButton(transactionsActions.java:29)
+	at com.d3.endToEnd.D3AutomationDemo.verifyTransactionsButton(D3AutomationDemo.java:186)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyTransactionsButton -->
+        <test-method status="PASS" signature="takeScreenShotOnFailure(org.testng.ITestResult)[pri:0, instance:com.d3.endToEnd.D3AutomationDemo@53fd30]" name="takeScreenShotOnFailure" is-config="true" duration-ms="181" started-at="2015-01-06T13:36:17Z" finished-at="2015-01-06T13:36:17Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyTransactionsButton status=FAILURE method=D3AutomationDemo.verifyTransactionsButton()[pri:0, instance:com.d3.endToEnd.D3AutomationDemo@53fd30] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeScreenShotOnFailure -->
+        <test-method status="FAIL" signature="verifyMoneyMovementButton()[pri:0, instance:com.d3.endToEnd.D3AutomationDemo@53fd30]" name="verifyMoneyMovementButton" duration-ms="1" started-at="2015-01-06T13:36:17Z" finished-at="2015-01-06T13:36:17Z">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+	at com.d3.moneyMovement.moneyMovementActions.moneyMovementButton(moneyMovementActions.java:29)
+	at com.d3.endToEnd.D3AutomationDemo.verifyMoneyMovementButton(D3AutomationDemo.java:194)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyMoneyMovementButton -->
+        <test-method status="PASS" signature="takeScreenShotOnFailure(org.testng.ITestResult)[pri:0, instance:com.d3.endToEnd.D3AutomationDemo@53fd30]" name="takeScreenShotOnFailure" is-config="true" duration-ms="184" started-at="2015-01-06T13:36:17Z" finished-at="2015-01-06T13:36:17Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyMoneyMovementButton status=FAILURE method=D3AutomationDemo.verifyMoneyMovementButton()[pri:0, instance:com.d3.endToEnd.D3AutomationDemo@53fd30] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeScreenShotOnFailure -->
+        <test-method status="FAIL" signature="verifyPlanningButton()[pri:0, instance:com.d3.endToEnd.D3AutomationDemo@53fd30]" name="verifyPlanningButton" duration-ms="1" started-at="2015-01-06T13:36:17Z" finished-at="2015-01-06T13:36:17Z">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+	at com.d3.planning.planningActions.planningButton(planningActions.java:29)
+	at com.d3.endToEnd.D3AutomationDemo.verifyPlanningButton(D3AutomationDemo.java:203)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyPlanningButton -->
+        <test-method status="PASS" signature="takeScreenShotOnFailure(org.testng.ITestResult)[pri:0, instance:com.d3.endToEnd.D3AutomationDemo@53fd30]" name="takeScreenShotOnFailure" is-config="true" duration-ms="179" started-at="2015-01-06T13:36:17Z" finished-at="2015-01-06T13:36:17Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyPlanningButton status=FAILURE method=D3AutomationDemo.verifyPlanningButton()[pri:0, instance:com.d3.endToEnd.D3AutomationDemo@53fd30] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeScreenShotOnFailure -->
+        <test-method status="FAIL" signature="verifyHelpButton()[pri:0, instance:com.d3.endToEnd.D3AutomationDemo@53fd30]" name="verifyHelpButton" duration-ms="1" started-at="2015-01-06T13:36:17Z" finished-at="2015-01-06T13:36:17Z">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+	at com.d3.help.helpActions.helpButton(helpActions.java:30)
+	at com.d3.endToEnd.D3AutomationDemo.verifyHelpButton(D3AutomationDemo.java:213)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyHelpButton -->
+        <test-method status="PASS" signature="takeScreenShotOnFailure(org.testng.ITestResult)[pri:0, instance:com.d3.endToEnd.D3AutomationDemo@53fd30]" name="takeScreenShotOnFailure" is-config="true" duration-ms="180" started-at="2015-01-06T13:36:17Z" finished-at="2015-01-06T13:36:17Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyHelpButton status=FAILURE method=D3AutomationDemo.verifyHelpButton()[pri:0, instance:com.d3.endToEnd.D3AutomationDemo@53fd30] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeScreenShotOnFailure -->
+        <test-method status="FAIL" signature="verifySettingsButton()[pri:0, instance:com.d3.endToEnd.D3AutomationDemo@53fd30]" name="verifySettingsButton" duration-ms="0" started-at="2015-01-06T13:36:17Z" finished-at="2015-01-06T13:36:17Z">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+	at com.d3.settings.settingsActions.settingsButton(settingsActions.java:29)
+	at com.d3.endToEnd.D3AutomationDemo.verifySettingsButton(D3AutomationDemo.java:223)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySettingsButton -->
+        <test-method status="PASS" signature="takeScreenShotOnFailure(org.testng.ITestResult)[pri:0, instance:com.d3.endToEnd.D3AutomationDemo@53fd30]" name="takeScreenShotOnFailure" is-config="true" duration-ms="186" started-at="2015-01-06T13:36:17Z" finished-at="2015-01-06T13:36:18Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifySettingsButton status=FAILURE method=D3AutomationDemo.verifySettingsButton()[pri:0, instance:com.d3.endToEnd.D3AutomationDemo@53fd30] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeScreenShotOnFailure -->
+        <test-method status="PASS" signature="terminateBrowser()[pri:0, instance:com.d3.endToEnd.D3AutomationDemo@53fd30]" name="terminateBrowser" is-config="true" duration-ms="1156" started-at="2015-01-06T13:36:18Z" finished-at="2015-01-06T13:36:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- terminateBrowser -->
+      </class> <!-- com.d3.endToEnd.D3AutomationDemo -->
+    </test> <!-- Default test -->
+  </suite> <!-- D3AutomationDemo Tests -->
+</testng-results>
