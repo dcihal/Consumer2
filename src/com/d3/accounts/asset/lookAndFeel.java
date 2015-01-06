@@ -71,26 +71,27 @@ package com.d3.accounts.asset;
 	    	Long timeout = Long.valueOf(WebdriverTimeout);
 	        driver = Utils.getWebDriver(browser, timeout); 
 			
-			driver.get(baseurl);
-			//bl.init(driver, timeout);
+	        driver.get(baseurl);
+			LoginActions.init(driver, timeout);
+			DashboardActions.init(driver, timeout);
 
 		}
 		
-		@BeforeClass(alwaysRun = true)
+/*		@BeforeClass(alwaysRun = true)
 		@Parameters({"testRailUrl", "testRailUserName", "testRailPassWord"})
 		public void initTestRails(String testRailUrl, String testRailUserName, String testRailPassWord)
 		{	
 			d3testrails.InitRail(testRailUrl, testRailUserName, testRailPassWord);
-		}
+		}*/
 		
 		
-	  @Test(priority = 1, groups = {"accounts", "smoketest", "regression"})
+	  @Test(priority = 1, groups = {"accounts", "smoke", "regression"})
 	  public void verifyHomepageTitle() {
 		   TestCase = "12";
 		   LoginActions.veriyHomePage(driver);
 	  }
 	    
-	  @Test(priority = 2, groups = {"accounts", "smoketest", "regression"})
+	  @Test(priority = 2, groups = {"accounts", "smoke", "regression"})
 	  @Parameters({"userName"})
 	  public void verifyInvalidLogin(String userName) 
 	  {
@@ -104,7 +105,7 @@ package com.d3.accounts.asset;
 
 	  }
 	  
-	  @Test(priority = 3, groups = {"accounts", "smoketest", "regression"})
+	  @Test(priority = 3, groups = {"accounts", "smoke", "regression"})
 	  @Parameters({"userName", "passWord"})
 	  public void verifyValidLogin(String userName, String passWord) 
 	  {
@@ -116,7 +117,7 @@ package com.d3.accounts.asset;
 		   LoginActions.submit(driver);
 	  }
 	  
-	  @Test(priority = 4, groups = {"accounts", "smoketest", "regression"})
+	  @Test(priority = 4, groups = {"accounts", "smoke", "regression"})
 	  @Parameters({"secretQuestion"})
 	  public void verifySecretQuestion(String secretQuestion) 
 	  {
@@ -131,22 +132,7 @@ package com.d3.accounts.asset;
 			//String actualTitle = driver.getTitle();
 			//Assert.assertEquals(actualTitle, expectedTitle);
 	  }
-	  
-	//  @Test(priority = 5, groups = {"accounts", "smoketest", "regression"})
-	//  public void termsOfService() {
-//		   //TestCase = "";
-//		  _aiTemp.termsOfService(driver);
-//		  _aiTemp.submit(driver);
-	//  }
-	  
-	  @Test(priority = 6, groups = {"accounts", "smoketest", "regression"})
-	  public void verifyPlanButton() 
-	  {
-		   TestCase = "14";
-		   DashboardActions.planButton(driver);
-		   Utils.isTextPresent(driver, "Cash Flow Trends");
-		   Utils.isTextPresent(driver, "Financial Goal Progress");	   
-	  }  
+
 	 
  
 	  /*@AfterMethod(alwaysRun = true)

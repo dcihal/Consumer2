@@ -12,41 +12,23 @@
   <test name="Smoke Tests(failed)">
     <groups>
       <run>
-        <include name="smoketest"/>
+        <include name="smoke"/>
       </run>
     </groups>
     <classes>
       <class name="com.d3.endToEnd.D3AutomationDemo">
         <methods>
-          <include name="verifyHomepageTitle"/>
-          <include name="verifyMoneyMovementButton"/>
-          <include name="verifyInvalidLogin" invocation-numbers="0"/>
-          <include name="initTestRails"/>
-          <include name="verifyTransactionsButton"/>
-          <include name="launchBrowser"/>
-          <include name="verifyAccountsButton"/>
-          <include name="verifyMessagesButton"/>
-          <include name="verifySettingsButton"/>
-          <include name="verifyValidLogin" invocation-numbers="0"/>
-          <include name="verifyHelpButton"/>
           <include name="takeScreenShotOnFailure"/>
-          <include name="verifyPlanButton"/>
-          <include name="verifySecretQuestion" invocation-numbers="0"/>
-          <include name="verifyPlanningButton"/>
+          <include name="launchBrowser"/>
           <include name="terminateBrowser"/>
+          <include name="verifyAccountsButton"/>
         </methods>
       </class> <!-- com.d3.endToEnd.D3AutomationDemo -->
       <class name="com.d3.accounts.asset.lookAndFeel">
         <methods>
-          <include name="verifyValidLogin" invocation-numbers="0"/>
           <include name="launchBrowser"/>
           <include name="terminateBrowser"/>
-          <include name="verifySecretQuestion" invocation-numbers="0"/>
-          <include name="initTestRails"/>
-          <include name="verifyHomepageTitle"/>
-          <include name="verifyPlanButton"/>
           <include name="takeScreenShotOnFailure"/>
-          <include name="verifyInvalidLogin" invocation-numbers="0"/>
         </methods>
       </class> <!-- com.d3.accounts.asset.lookAndFeel -->
     </classes>

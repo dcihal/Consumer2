@@ -1,4 +1,4 @@
-<suite name="D3AutomationDemo Tests" verbose="2"><parameter
+<suite name="D3 Smoke Tests" verbose="2"><parameter
 		name="WebdriverTimeout" value="30">
 </parameter>
 	<parameter name="baseurl" value="https://fi1-qa4.dev.d3banking.com/"></parameter>
@@ -11,7 +11,7 @@
 	<test name="Smoke Tests">
 		<groups>
 			<run>
-				<include name='smoketest'/>
+				<include name='smoke'/>
 			</run>
 		</groups>
 		<classes>

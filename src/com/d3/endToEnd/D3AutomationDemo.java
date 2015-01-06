@@ -73,25 +73,33 @@ public class D3AutomationDemo {
         driver = Utils.getWebDriver(browser, timeout); 
 		
 		driver.get(baseurl);
-		//bl.init(driver, timeout);
+		LoginActions.init(driver, timeout);
+		DashboardActions.init(driver, timeout);
+		MessagesActions.init(driver, timeout);
+		AccountsActions.init(driver, timeout);
+		TransactionsActions.init(driver, timeout);
+		MoneyMovementActions.init(driver, timeout);
+		PlanningActions.init(driver, timeout);
+		HelpActions.init(driver, timeout);
+		SettingsActions.init(driver, timeout);
 
 	}
 	
-	@BeforeClass(alwaysRun = true)
+/*	@BeforeClass(alwaysRun = true)
 	@Parameters({"testRailUrl", "testRailUserName", "testRailPassWord"})
 	public void initTestRails(String testRailUrl, String testRailUserName, String testRailPassWord)
 	{	
 		d3testrails.InitRail(testRailUrl, testRailUserName, testRailPassWord);
-	}
+	}*/
 	
 	
-  @Test(priority = 1, groups = {"smoketest", "regression"})
+  @Test(priority = 1, groups = {"smoke", "regression"})
   public void verifyHomepageTitle() {
 	   TestCase = "12";
 	   LoginActions.veriyHomePage(driver);
   }
     
-  @Test(priority = 2, groups = {"smoketest", "regression"})
+  @Test(priority = 2, groups = {"smoke", "regression"})
   @Parameters({"userName"})
   public void verifyInvalidLogin(String userName) 
   {
@@ -105,7 +113,7 @@ public class D3AutomationDemo {
 
   }
   
-  @Test(priority = 3, groups = {"smoketest", "regression"})
+  @Test(priority = 3, groups = {"smoke", "regression"})
   @Parameters({"userName", "passWord"})
   public void verifyValidLogin(String userName, String passWord) 
   {
@@ -117,7 +125,7 @@ public class D3AutomationDemo {
 	   LoginActions.submit(driver);
   }
   
-  @Test(priority = 4, groups = {"smoketest", "regression"})
+  @Test(priority = 4, groups = {"smoke", "regression"})
   @Parameters({"secretQuestion"})
   public void verifySecretQuestion(String secretQuestion) 
   {
@@ -133,14 +141,14 @@ public class D3AutomationDemo {
 		//Assert.assertEquals(actualTitle, expectedTitle);
   }
   
-//  @Test(priority = 5, groups = {"smoketest", "regression"})
+//  @Test(priority = 5, groups = {"smoke", "regression"})
 //  public void termsOfService() {
 //	   //TestCase = "";
 //	  _aiTemp.termsOfService(driver);
 //	  _aiTemp.submit(driver);
 //  }
   
-  @Test(priority = 6, groups = {"smoketest", "regression"})
+  @Test(priority = 6, groups = {"smoke", "regression"})
   public void verifyPlanButton() 
   {
 	   TestCase = "14";
@@ -149,19 +157,19 @@ public class D3AutomationDemo {
 	   Utils.isTextPresent(driver, "Financial Goal Progress");	   
   }  
  
-//  @Test(priority = 7, groups = {"smoketest", "regression"})
+//  @Test(priority = 7, groups = {"smoke", "regression"})
 //  public void verifyCreateBudget() {
 //  TestCase = "6";
 //	   _aiTemp.createBudget(driver);
 //  }
 // 
-//  @Test(priority = 8, groups = {"smoketest", "regression"})
+//  @Test(priority = 8, groups = {"smoke", "regression"})
 //  public void verifyManageButton() {
 //  TestCase = "7";
 //	   _aiTemp.manageButton(driver);
 //  }
 
-  @Test(priority = 9, groups = {"smoketest", "regression"})
+  @Test(priority = 9, groups = {"smoke", "regression"})
   public void verifyMessagesButton() 
   {
 	   TestCase = "15";
@@ -169,7 +177,7 @@ public class D3AutomationDemo {
 	   Utils.isTextPresent(driver, "Messages: Notices");
   }  
   
-  @Test(priority = 10, groups = {"smoketest", "regression"})
+  @Test(priority = 10, groups = {"smoke", "regression"})
   public void verifyAccountsButton() 
   {
 	   TestCase = "16";
@@ -179,7 +187,7 @@ public class D3AutomationDemo {
 	   Utils.isTextPresent(driver, "Liabilities");
   }  
  
-  @Test(priority = 11, groups = {"smoketest", "regression"})
+  @Test(priority = 11, groups = {"smoke", "regression"})
   public void verifyTransactionsButton() 
   {
 	   TestCase = "17";
@@ -187,7 +195,7 @@ public class D3AutomationDemo {
 	   Utils.isTextPresent(driver, "All Accounts");
   }  
  
-  @Test(priority = 12, groups = {"smoketest", "regression"})
+  @Test(priority = 12, groups = {"smoke", "regression"})
   public void verifyMoneyMovementButton() 
   {
 	   TestCase = "18";
@@ -196,7 +204,7 @@ public class D3AutomationDemo {
 	   Utils.isTextPresent(driver, "Payments & Transfers");
   }  
  
-  @Test(priority = 13, groups = {"smoketest", "regression"})
+  @Test(priority = 13, groups = {"smoke", "regression"})
   public void verifyPlanningButton() 
   {
 	   TestCase = "19";
@@ -206,7 +214,7 @@ public class D3AutomationDemo {
 	   Utils.isTextPresent(driver, "Expense Categories");
   }  
  
-  @Test(priority = 14, groups = {"smoketest", "regression"})
+  @Test(priority = 14, groups = {"smoke", "regression"})
   public void verifyHelpButton() 
   {
 	   TestCase = "20";
@@ -216,7 +224,7 @@ public class D3AutomationDemo {
 	   Utils.isTextPresent(driver, "402-555-1234");
   }  
  
-  @Test(priority = 15, groups = {"smoketest", "regression"})
+  @Test(priority = 15, groups = {"smoke", "regression"})
   public void verifySettingsButton() 
   {
 	   TestCase = "21";
