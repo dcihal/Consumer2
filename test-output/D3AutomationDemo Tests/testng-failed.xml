@@ -9,7 +9,12 @@
   <parameter name="testRailUserName" value="dcihal@d3banking.com"/>
   <parameter name="WebdriverTimeout" value="30"/>
   <parameter name="userName" value="samueladamsiii"/>
-  <test name="Default test(failed)">
+  <test name="Smoke Tests(failed)">
+    <groups>
+      <run>
+        <include name="smoketest"/>
+      </run>
+    </groups>
     <classes>
       <class name="com.d3.endToEnd.D3AutomationDemo">
         <methods>
@@ -31,6 +36,19 @@
           <include name="terminateBrowser"/>
         </methods>
       </class> <!-- com.d3.endToEnd.D3AutomationDemo -->
+      <class name="com.d3.accounts.asset.lookAndFeel">
+        <methods>
+          <include name="verifyValidLogin" invocation-numbers="0"/>
+          <include name="launchBrowser"/>
+          <include name="terminateBrowser"/>
+          <include name="verifySecretQuestion" invocation-numbers="0"/>
+          <include name="initTestRails"/>
+          <include name="verifyHomepageTitle"/>
+          <include name="verifyPlanButton"/>
+          <include name="takeScreenShotOnFailure"/>
+          <include name="verifyInvalidLogin" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.d3.accounts.asset.lookAndFeel -->
     </classes>
-  </test> <!-- Default test(failed) -->
+  </test> <!-- Smoke Tests(failed) -->
 </suite> <!-- Failed suite [D3AutomationDemo Tests] -->

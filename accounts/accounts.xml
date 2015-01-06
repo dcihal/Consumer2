@@ -8,10 +8,10 @@
 	<parameter name="userName" value="samueladamsiii"></parameter>
 	<parameter name="passWord" value="password"></parameter>
 	<parameter name="secretQuestion" value="denver"></parameter>
-	<test name="Smoke Tests">
+	<test name="Accounts Tests">
 		<groups>
 			<run>
-				<include name='smoketest'/>
+				<include name='accounts'/>
 			</run>
 		</groups>
 		<classes>
