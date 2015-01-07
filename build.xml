@@ -3,13 +3,46 @@
 <project name="D3AutomationDemo" basedir=".">
 
 	<property name="build.dir" value="build"/>
-	<property name="src.dir.d3.automation" value="src\com\d3\automation"/>
 	<property name="src.dir.d3.testrails" value="src\com\d3\testrails"/>
-	<property name="src.dir.gurock.testrails" value="src\com\gurock\testrail"/>
+	<property name="src.dir.gurock.testrail" value="src\com\gurock\testrail"/>
+	<property name="src.dir.d3.accounts" value="src\com\d3\accounts"/>
+	<property name="src.dir.d3.accounts.asset" value="src\com\d3\accounts\asset"/>
+	<property name="src.dir.d3.accounts.liability" value="src\com\d3\accounts\liability"/>
+	<property name="src.dir.d3.accounts.openNewAccount" value="src\com\d3\accounts\openNewAccount"/>
+	<property name="src.dir.d3.accounts.otherAccounts" value="src\com\d3\accounts\otherAccounts"/>
+	<property name="src.dir.d3.dashboard" value="src\com\d3\dashboard"/>
+	<property name="src.dir.d3.dashboard.manage" value="src\com\d3\dashboard.manage"/>
+	<property name="src.dir.d3.dashboard.plan" value="src\com\d3\dashboard.plan"/>
+	<property name="src.dir.d3.endToEnd" value="src\com\d3\endToEnd"/>
+	<property name="src.dir.d3.help" value="src\com\d3\help"/>
+	<property name="src.dir.d3.login" value="src\com\d3\login"/>
+	<property name="src.dir.d3.messages" value="src\com\d3\messages"/>
+	<property name="src.dir.d3.messages.notices" value="src\com\d3\messages\notices"/>
+	<property name="src.dir.d3.messages.secureMessages" value="src\com\d3\messages\secureMessages"/>
+	<property name="src.dir.d3.moneyMovement" value="src\com\d3\moneyMovement"/>
+	<property name="src.dir.d3.moneyMovement.ebills" value="src\com\d3\moneyMovement\ebills"/>
+	<property name="src.dir.d3.moneyMovement.payMultiple" value="src\com\d3\moneyMovement\payMultiple"/>
+	<property name="src.dir.d3.moneyMovement.popMoney" value="src\com\d3\moneyMovement\popMoney"/>
+	<property name="src.dir.d3.moneyMovement.recipients" value="src\com\d3\moneyMovement\recipients"/>
+	<property name="src.dir.d3.moneyMovement.schedule" value="src\com\d3\moneyMovement\schedule"/>
+	<property name="src.dir.d3.planning" value="src\com\d3\planning"/>
+	<property name="src.dir.d3.planning.budget" value="src\com\d3\planning\budget"/>
+	<property name="src.dir.d3.planning.goals" value="src\com\d3\planning\goals"/>
+	<property name="src.dir.d3.settings" value="src\com\d3\settings"/>
+	<property name="src.dir.d3.settings.accounts" value="src\com\d3\settings\accounts"/>
+	<property name="src.dir.d3.settings.alerts" value="src\com\d3\settings\alerts"/>
+	<property name="src.dir.d3.settings.categories" value="src\com\d3\settings\categories"/>
+	<property name="src.dir.d3.settings.rules" value="src\com\d3\settings\rules"/>
+	<property name="src.dir.d3.settings.security" value="src\com\d3\settings\security"/>
+	<property name="src.dir.d3.settings.userProfile" value="src\com\d3\settings\userProfile"/>
+	<property name="src.dir.d3.transactions" value="src\com\d3\transactions"/>
 	<property name="src.dir.d3.utils" value="src\com\d3\utils"/>
 	<property name="libs.dir" value="libs"/>
     <property name="reports.dir" value="reports"/>
     <property name="conf.dir" value="conf"/>
+	<property name="regression.dir" value="regression"/>
+	<property name="accounts.dir" value="accounts"/>
+    <property name="smoke.dir" value="smoke"/>
 	
     <!-- options -->
 	<property name="javac.deprecation" value="on"/>
@@ -43,27 +76,207 @@
  	
  	<!-- compile the gurock.testrails directories -->
     <javac includeantruntime="false" destdir="${build.dir}" debug="on" deprecation="${javac.deprecation}" verbose="${javac.verbose}" failonerror="true"> 
-    	<src path="${src.dir.gurock.testrails}"/>
+       <src path="${src.dir.gurock.testrail}"/>
          <classpath refid="cp"/>
-     </javac>
+    </javac>
  	
- 	 <!-- compile the d3.testrails directories --> 		
- 	 <javac includeantruntime="false" destdir="${build.dir}" debug="on" deprecation="${javac.deprecation}" verbose="${javac.verbose}" failonerror="true"> 
- 	    <src path="${src.dir.d3.testrails}"/>
- 	      <classpath refid="cp"/>
- 	 </javac>
+ 	<!-- compile the d3.testrails directories --> 		
+ 	<javac includeantruntime="false" destdir="${build.dir}" debug="on" deprecation="${javac.deprecation}" verbose="${javac.verbose}" failonerror="true"> 
+ 	   <src path="${src.dir.d3.testrails}"/>
+ 	     <classpath refid="cp"/>
+ 	</javac>
  	
-	 <!-- compile the d3.utils directories --> 		
-	 <javac includeantruntime="false" destdir="${build.dir}" debug="on" deprecation="${javac.deprecation}" verbose="${javac.verbose}" failonerror="true"> 
-	    <src path="${src.dir.d3.utils}"/>
-	      <classpath refid="cp"/>
-	 </javac>
+	<!-- compile the d3.utils directories --> 		
+    <javac includeantruntime="false" destdir="${build.dir}" debug="on" deprecation="${javac.deprecation}" verbose="${javac.verbose}" failonerror="true"> 
+	   <src path="${src.dir.d3.utils}"/>
+	     <classpath refid="cp"/>
+	</javac>
+ 	
+	<!-- compile the d3.accounts directories --> 		
+	<javac includeantruntime="false" destdir="${build.dir}" debug="on" deprecation="${javac.deprecation}" verbose="${javac.verbose}" failonerror="true"> 
+	   <src path="${src.dir.d3.accounts}"/>
+	   	 <classpath refid="cp"/>
+	</javac>
+ 		
+    <!-- compile the d3.accounts.asset directories --> 		
+    <javac includeantruntime="false" destdir="${build.dir}" debug="on" deprecation="${javac.deprecation}" verbose="${javac.verbose}" failonerror="true"> 
+   	   <src path="${src.dir.d3.accounts.asset}"/>
+   	     <classpath refid="cp"/>
+    </javac>
+ 		
+ 	<!-- compile the d3.accounts.liability directories --> 		
+ 	<javac includeantruntime="false" destdir="${build.dir}" debug="on" deprecation="${javac.deprecation}" verbose="${javac.verbose}" failonerror="true"> 
+ 	   <src path="${src.dir.d3.accounts.liability}"/>
+ 	     <classpath refid="cp"/>
+ 	</javac>
+ 		
+    <!-- compile the d3.accounts.openNewAccount directories --> 		
+    <javac includeantruntime="false" destdir="${build.dir}" debug="on" deprecation="${javac.deprecation}" verbose="${javac.verbose}" failonerror="true"> 
+   	   <src path="${src.dir.d3.accounts.openNewAccount}"/>
+   	     <classpath refid="cp"/>
+    </javac>
+ 		
+    <!-- compile the d3.accounts.otherAccounts directories --> 		
+    <javac includeantruntime="false" destdir="${build.dir}" debug="on" deprecation="${javac.deprecation}" verbose="${javac.verbose}" failonerror="true"> 
+   	   <src path="${src.dir.d3.accounts.otherAccounts}"/>
+   	     <classpath refid="cp"/>
+    </javac>
+ 	
+    <!-- compile the d3.dashboard directories --> 		
+    <javac includeantruntime="false" destdir="${build.dir}" debug="on" deprecation="${javac.deprecation}" verbose="${javac.verbose}" failonerror="true"> 
+   	   <src path="${src.dir.d3.dashboard}"/>
+   	     <classpath refid="cp"/>
+    </javac>
+ 		
+    <!-- compile the d3.dashboard.manage directories --> 		
+    <javac includeantruntime="false" destdir="${build.dir}" debug="on" deprecation="${javac.deprecation}" verbose="${javac.verbose}" failonerror="true"> 
+   	   <src path="${src.dir.d3.dashboard.manage}"/>
+   	     <classpath refid="cp"/>
+    </javac>
+ 	
+    <!-- compile the d3.dashboard.plan directories --> 		
+    <javac includeantruntime="false" destdir="${build.dir}" debug="on" deprecation="${javac.deprecation}" verbose="${javac.verbose}" failonerror="true"> 
+   	   <src path="${src.dir.d3.dashboard.plan}"/>
+   	     <classpath refid="cp"/>
+    </javac>
+ 		
+ 	<!-- compile the d3.endToEnd directories --> 		
+ 	<javac includeantruntime="false" destdir="${build.dir}" debug="on" deprecation="${javac.deprecation}" verbose="${javac.verbose}" failonerror="true"> 
+ 	   <src path="${src.dir.d3.endToEnd}"/>
+ 	     <classpath refid="cp"/>
+ 	</javac>
+ 		
+    <!-- compile the d3.help directories --> 		
+    <javac includeantruntime="false" destdir="${build.dir}" debug="on" deprecation="${javac.deprecation}" verbose="${javac.verbose}" failonerror="true"> 
+   	   <src path="${src.dir.d3.help}"/>
+   	     <classpath refid="cp"/>
+    </javac>
+ 		
+    <!-- compile the d3.login directories --> 		
+    <javac includeantruntime="false" destdir="${build.dir}" debug="on" deprecation="${javac.deprecation}" verbose="${javac.verbose}" failonerror="true"> 
+   	   <src path="${src.dir.d3.login}"/>
+   	     <classpath refid="cp"/>
+    </javac>
+ 		
+    <!-- compile the d3.messages directories --> 		
+    <javac includeantruntime="false" destdir="${build.dir}" debug="on" deprecation="${javac.deprecation}" verbose="${javac.verbose}" failonerror="true"> 
+   	   <src path="${src.dir.d3.messages}"/>
+   	     <classpath refid="cp"/>
+    </javac>
+ 		
+ 	<!-- compile the d3.messages.notices directories --> 		
+ 	<javac includeantruntime="false" destdir="${build.dir}" debug="on" deprecation="${javac.deprecation}" verbose="${javac.verbose}" failonerror="true"> 
+ 	   <src path="${src.dir.d3.messages.notices}"/>
+ 	     <classpath refid="cp"/>
+ 	</javac>
+ 	
+ 	<!-- compile the d3.messages.secureMessages directories --> 		
+ 	<javac includeantruntime="false" destdir="${build.dir}" debug="on" deprecation="${javac.deprecation}" verbose="${javac.verbose}" failonerror="true"> 
+ 	   <src path="${src.dir.d3.messages.secureMessages}"/>
+ 	     <classpath refid="cp"/>
+ 	</javac>
+ 		
+    <!-- compile the d3.moneyMovement directories --> 		
+    <javac includeantruntime="false" destdir="${build.dir}" debug="on" deprecation="${javac.deprecation}" verbose="${javac.verbose}" failonerror="true"> 
+   	   <src path="${src.dir.d3.moneyMovement}"/>
+   	     <classpath refid="cp"/>
+    </javac>
+	
+ 	<!-- compile the d3.moneyMovement.ebills directories --> 		
+ 	<javac includeantruntime="false" destdir="${build.dir}" debug="on" deprecation="${javac.deprecation}" verbose="${javac.verbose}" failonerror="true"> 
+ 	   <src path="${src.dir.d3.moneyMovement.ebills}"/>
+ 	     <classpath refid="cp"/>
+ 	</javac>
+ 		
+ 	<!-- compile the d3.moneyMovement.payMultiple directories --> 		
+ 	<javac includeantruntime="false" destdir="${build.dir}" debug="on" deprecation="${javac.deprecation}" verbose="${javac.verbose}" failonerror="true"> 
+ 	   <src path="${src.dir.d3.moneyMovement.payMultiple}"/>
+ 	     <classpath refid="cp"/>
+ 	</javac>
+ 	 	
+ 	<!-- compile the d3.moneyMovement.popMoney directories --> 		
+ 	<javac includeantruntime="false" destdir="${build.dir}" debug="on" deprecation="${javac.deprecation}" verbose="${javac.verbose}" failonerror="true"> 
+ 	   <src path="${src.dir.d3.moneyMovement.popMoney}"/>
+ 	     <classpath refid="cp"/>
+ 	</javac>
+ 		
+    <!-- compile the d3.moneyMovement.recipients directories --> 		
+    <javac includeantruntime="false" destdir="${build.dir}" debug="on" deprecation="${javac.deprecation}" verbose="${javac.verbose}" failonerror="true"> 
+   	   <src path="${src.dir.d3.moneyMovement.recipients}"/>
+   	     <classpath refid="cp"/>
+    </javac>
+ 		
+    <!-- compile the d3.moneyMovement.schedule directories --> 		
+    <javac includeantruntime="false" destdir="${build.dir}" debug="on" deprecation="${javac.deprecation}" verbose="${javac.verbose}" failonerror="true"> 
+   	   <src path="${src.dir.d3.moneyMovement.schedule}"/>
+   	     <classpath refid="cp"/>
+    </javac>
+ 		
+    <!-- compile the d3.planning directories --> 		
+    <javac includeantruntime="false" destdir="${build.dir}" debug="on" deprecation="${javac.deprecation}" verbose="${javac.verbose}" failonerror="true"> 
+   	   <src path="${src.dir.d3.planning}"/>
+   	     <classpath refid="cp"/>
+    </javac>
+ 		
+ 	<!-- compile the d3.planning.budget directories --> 		
+ 	<javac includeantruntime="false" destdir="${build.dir}" debug="on" deprecation="${javac.deprecation}" verbose="${javac.verbose}" failonerror="true"> 
+ 	   <src path="${src.dir.d3.planning.budget}"/>
+ 	     <classpath refid="cp"/>
+ 	</javac>
+ 		
+    <!-- compile the d3.planning.goals directories --> 		
+    <javac includeantruntime="false" destdir="${build.dir}" debug="on" deprecation="${javac.deprecation}" verbose="${javac.verbose}" failonerror="true"> 
+   	   <src path="${src.dir.d3.planning.goals}"/>
+   	     <classpath refid="cp"/>
+    </javac>
+ 		
+ 	<!-- compile the d3.settings directories --> 		
+ 	<javac includeantruntime="false" destdir="${build.dir}" debug="on" deprecation="${javac.deprecation}" verbose="${javac.verbose}" failonerror="true"> 
+ 	   <src path="${src.dir.d3.settings}"/>
+ 	     <classpath refid="cp"/>
+ 	</javac>
+ 		
+ 	<!-- compile the d3.settings.accounts directories --> 		
+ 	<javac includeantruntime="false" destdir="${build.dir}" debug="on" deprecation="${javac.deprecation}" verbose="${javac.verbose}" failonerror="true"> 
+ 	   <src path="${src.dir.d3.settings.accounts}"/>
+ 	     <classpath refid="cp"/>
+ 	</javac>
+ 	 
+    <!-- compile the d3.settings.alerts directories --> 		
+    <javac includeantruntime="false" destdir="${build.dir}" debug="on" deprecation="${javac.deprecation}" verbose="${javac.verbose}" failonerror="true"> 
+   	   <src path="${src.dir.d3.settings.alerts}"/>
+   	     <classpath refid="cp"/>
+    </javac>
+ 		
+    <!-- compile the d3.settings.categories directories --> 		
+    <javac includeantruntime="false" destdir="${build.dir}" debug="on" deprecation="${javac.deprecation}" verbose="${javac.verbose}" failonerror="true"> 
+   	   <src path="${src.dir.d3.settings.categories}"/>
+   	     <classpath refid="cp"/>
+    </javac>
+ 		
+ 	<!-- compile the d3.settings.rules directories --> 		
+ 	<javac includeantruntime="false" destdir="${build.dir}" debug="on" deprecation="${javac.deprecation}" verbose="${javac.verbose}" failonerror="true"> 
+ 	   <src path="${src.dir.d3.settings.rules}"/>
+ 	     <classpath refid="cp"/>
+ 	</javac>
+ 		
+ 	<!-- compile the d3.settings.security directories --> 		
+ 	<javac includeantruntime="false" destdir="${build.dir}" debug="on" deprecation="${javac.deprecation}" verbose="${javac.verbose}" failonerror="true"> 
+ 	   <src path="${src.dir.d3.settings.security}"/>
+ 	     <classpath refid="cp"/>
+ 	</javac>
+ 	
+ 	<!-- compile the d3.settings.userProfile directories --> 		
+ 	<javac includeantruntime="false" destdir="${build.dir}" debug="on" deprecation="${javac.deprecation}" verbose="${javac.verbose}" failonerror="true"> 
+ 	   <src path="${src.dir.d3.settings.userProfile}"/>
+ 	     <classpath refid="cp"/>
+ 	</javac>
     	
-     <!-- compile the d3.automation directories --> 		
-     <javac includeantruntime="false" destdir="${build.dir}" debug="on" deprecation="${javac.deprecation}" verbose="${javac.verbose}" failonerror="true"> 
-    	 <src path="${src.dir.d3.automation}"/>
-    	   <classpath refid="cp"/>
-     </javac>
+    <!-- compile the d3.transactions directories --> 		
+    <javac includeantruntime="false" destdir="${build.dir}" debug="on" deprecation="${javac.deprecation}" verbose="${javac.verbose}" failonerror="true"> 
+       <src path="${src.dir.d3.transactions}"/>
+         <classpath refid="cp"/>
+    </javac>
 
  </target>
 	
@@ -71,9 +284,10 @@
    
  	<testng classpathref="cp"  delegateCommandSystemProperties="true" outputdir="${reports.dir}">
 	 	<sysproperty key="browse" value="${browse}"/>
-	   	<sysproperty key="webserver" value="${webserver}"/>
- 		<sysproperty key="mode" value="${mode}"/>
 	   	<xmlfileset dir="${conf.dir}" includes="tstng.xml"/>
+ 		<xmlfileset dir="${accounts.dir}" includes="accounts.xml"/>
+	   	<xmlfileset dir="${smoke.dir}" includes="smoke.xml"/>
+	   	<xmlfileset dir="${regression.dir}" includes="regression.xml"/>
 	     <!-- classfileset dir="${build.dir}" includes="example1/*.class"/ -->
  	</testng>
  	
