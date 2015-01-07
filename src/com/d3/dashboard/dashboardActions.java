@@ -61,6 +61,13 @@ public class dashboardActions {
 	    Mapping.QuickPaySelectRecipient.click(); 
 	}
     
+    public void bestBuyAccount(WebDriver driver)
+    {
+	    wait.until(ExpectedConditions.visibilityOf(Mapping.BestBuyAccount));	
+	    Actions action = new Actions(driver);    
+	   		action.moveToElement(Mapping.BestBuyAccount).click().build().perform();   
+    }
+    
     public void myCreditCardAccount(WebDriver driver)
     {
 	    wait.until(ExpectedConditions.visibilityOf(Mapping.MyCreditCardAccount));	

@@ -5,6 +5,7 @@ import java.io.IOException;
 import java.sql.Date;
 
 import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.By;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
@@ -30,7 +31,7 @@ import com.d3.utils.Utils;
 import com.d3.utils.Utils.BrowserType;
 //import com.gurock.testrail.APIException;
 
-public class TransferNowFutureDate {
+public class QuickPayTransferFutureDate {
 	
 	public WebDriver driver;
 	private BrowserType browser;
@@ -93,7 +94,7 @@ public class TransferNowFutureDate {
 	
 	  @Test(priority = 19, groups = {"smoke", "regression"})
 	  @Parameters({"userName", "passWord", "secretQuestion"})
-	  public void verifyQuickPayFutureDate(String userName, String passWord, String secretQuestion) 
+	  public void verifyQuickPayFutureDate(String userName, String passWord, String secretQuestion) throws InterruptedException 
 	  {
 		   TestCase = "332";
 		   LoginActions.loginUn(driver, userName);
@@ -107,6 +108,14 @@ public class TransferNowFutureDate {
 		   Utils.isTextPresent(driver, "BEST BUY");
 		   DashboardActions.myCreditCardAccount(driver);
 		   Utils.isTextPresent(driver, "AMOUNT");
+		   driver.findElement(By.name("amount")).clear();
+		   DashboardActions.setQuickPayAmount(driver, "1");
+		   driver.findElement(By.name("scheduledDate")).clear();
+		   DashboardActions.quickPayCalendarSpecificDate(driver, "12/31/2015");
+		   DashboardActions.quickPaySubmitButton(driver);
+		   Utils.isTextPresent(driver, "A transfer of $1.00 to My Loan - Loan Account is scheduled for 12/31/2015");
+		   DashboardActions.quickPayConfirm(driver);
+		   Utils.isTextPresent(driver, "Success");
 	  } 
 
   /*@AfterMethod

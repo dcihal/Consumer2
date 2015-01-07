@@ -32,8 +32,12 @@ public WebElement Manage;
     @FindBy(how = How.CLASS_NAME, using = "select2-chosen")
     
     public WebElement QuickPaySelectRecipient;
-	
+    
     @FindBy(how = How.ID, using = "select2-result-label-8")
+
+    public WebElement BestBuyAccount;
+	
+    @FindBy(how = How.CLASS_NAME, using = "select2-result-sub")
 
     public WebElement MyCreditCardAccount;
 
