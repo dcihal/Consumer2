@@ -5,7 +5,6 @@ import java.io.IOException;
 import java.sql.Date;
 
 import org.apache.commons.io.FileUtils;
-import org.openqa.selenium.By;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
@@ -107,7 +106,7 @@ public class searchMessageContent {
 		   MessagesActions.messagesButton(driver);
 		   MessagesActions.searchField(driver, "Internal Transfer Created Alert from your bank");
 		   Utils.isTextPresent(driver, "Internal Transfer Created Alert from your bank");
-		   Thread.sleep(4000);
+		   // STILL NEED TO DO AN ASSERT THAT TEXT IS NOT PRESENT ON THE PAGE //
 		   //Utils.isTextNotPresent(driver, "Successful Transfer Alert from your bank");
 	  } 
 
