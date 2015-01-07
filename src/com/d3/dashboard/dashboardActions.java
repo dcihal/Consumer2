@@ -55,10 +55,10 @@ public class dashboardActions {
 	    Mapping.QuickPay.click(); 
 	}
 
-    public void selectRecipient(WebDriver driver)
+    public void quickPaySelectRecipient(WebDriver driver)
     {
-	    wait.until(ExpectedConditions.visibilityOf(Mapping.SelectRecipient));	
-	    Mapping.SelectRecipient.click(); 
+	    wait.until(ExpectedConditions.visibilityOf(Mapping.QuickPaySelectRecipient));	
+	    Mapping.QuickPaySelectRecipient.click(); 
 	}
     
     public void myCreditCardAccount(WebDriver driver)
@@ -102,5 +102,45 @@ public class dashboardActions {
 	    Actions action = new Actions(driver);    
    		action.moveToElement(Mapping.QuickPayConfirm).click().build().perform();   
     }    
+    
+    public void transferNow(WebDriver driver)
+    {
+	    wait.until(ExpectedConditions.visibilityOf(Mapping.TransferNow));	
+	    Mapping.TransferNow.click(); 
+	}
+    
+    public void transferNowSelectRecipient(WebDriver driver)
+    {
+	    wait.until(ExpectedConditions.visibilityOf(Mapping.TransferNowSelectRecipient));	
+	    Mapping.TransferNowSelectRecipient.click(); 
+	}
+    
+    public void transferNowMyCreditCardAccount(WebDriver driver)
+    {
+	    wait.until(ExpectedConditions.visibilityOf(Mapping.TransferNowMyCreditCardAccount));	
+	    Actions action = new Actions(driver);    
+	   		action.moveToElement(Mapping.TransferNowMyCreditCardAccount).click().build().perform();   
+    }
+    
+    public void setTransferNowAmount(WebDriver driver, String amount)
+    {
+	    wait.until(ExpectedConditions.visibilityOf(Mapping.Amount));	
+	    new Actions(driver).moveToElement(Mapping.Amount).perform();
+	    Mapping.Amount.sendKeys(amount); 
+    }
+    
+    public void transferNowSubmitButton(WebDriver driver)
+    {
+	    wait.until(ExpectedConditions.visibilityOf(Mapping.TransferNowSubmit));	
+	    Actions action = new Actions(driver);    
+   		action.moveToElement(Mapping.TransferNowSubmit).click().build().perform();
+    }
+    
+    public void transferNowConfirm(WebDriver driver)
+    {
+	    wait.until(ExpectedConditions.visibilityOf(Mapping.TransferNowConfirm));	
+	    Actions action = new Actions(driver);    
+   		action.moveToElement(Mapping.TransferNowConfirm).click().build().perform();   
+    } 
 
 }

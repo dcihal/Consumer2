@@ -9,28 +9,15 @@
   <parameter name="testRailUserName" value="dcihal@d3banking.com"/>
   <parameter name="WebdriverTimeout" value="30"/>
   <parameter name="userName" value="samueladamsiii"/>
-  <test name="Smoke Tests(failed)">
-    <groups>
-      <run>
-        <include name="smoke"/>
-      </run>
-    </groups>
+  <test name="Default test(failed)">
     <classes>
-      <class name="com.d3.endToEnd.D3AutomationDemo">
+      <class name="com.d3.dashboard.TransferNowCurrentDate">
         <methods>
           <include name="takeScreenShotOnFailure"/>
+          <include name="verifyQuickPayFutureDate" invocation-numbers="0"/>
           <include name="launchBrowser"/>
-          <include name="terminateBrowser"/>
-          <include name="verifyAccountsButton"/>
         </methods>
-      </class> <!-- com.d3.endToEnd.D3AutomationDemo -->
-      <class name="com.d3.accounts.asset.lookAndFeel">
-        <methods>
-          <include name="launchBrowser"/>
-          <include name="terminateBrowser"/>
-          <include name="takeScreenShotOnFailure"/>
-        </methods>
-      </class> <!-- com.d3.accounts.asset.lookAndFeel -->
+      </class> <!-- com.d3.dashboard.TransferNowCurrentDate -->
     </classes>
-  </test> <!-- Smoke Tests(failed) -->
+  </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [D3AutomationDemo Tests] -->

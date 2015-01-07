@@ -104,7 +104,7 @@ public class QuickPayPaymentFutureDate {
 		   LoginActions.privateDevice(driver);
 		   LoginActions.submit(driver);
 		   DashboardActions.quickPay(driver);
-		   DashboardActions.selectRecipient(driver);
+		   DashboardActions.quickPaySelectRecipient(driver);
 		   Utils.isTextPresent(driver, "BEST BUY");
 		   DashboardActions.myCreditCardAccount(driver);
 		   Utils.isTextPresent(driver, "AMOUNT");

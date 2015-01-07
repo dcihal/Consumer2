@@ -31,7 +31,7 @@ public WebElement Manage;
     
     @FindBy(how = How.CLASS_NAME, using = "select2-chosen")
     
-    public WebElement SelectRecipient;
+    public WebElement QuickPaySelectRecipient;
 	
     @FindBy(how = How.ID, using = "select2-result-label-8")
 
@@ -52,6 +52,27 @@ public WebElement Manage;
     @FindBy(how = How.CSS, using = "button.btn.btn-confirm")
 
     public WebElement QuickPayConfirm;
+    
+    @FindBy(how = How.XPATH, using = "//*[@id='main']/div/section[1]/div[2]/div[1]/div[2]/article/header/h2")
+    
+    public WebElement TransferNow;
+    
+    @FindBy(how = How.XPATH, using = "//*[@id='select2-chosen-2']")
+    
+    public WebElement TransferNowSelectRecipient;
+
+    @FindBy(how = How.CLASS_NAME, using = "select2-result-sub")
+    
+    public WebElement TransferNowMyCreditCardAccount;
+    
+    @FindBy(how = How.CSS, using = "button.btn.btn-ok")
+
+    public WebElement TransferNowSubmit;
+    
+    @FindBy(how = How.CSS, using = "button.btn.btn-confirm")
+
+    public WebElement TransferNowConfirm;
+
     
 	
 }

@@ -5,6 +5,7 @@ import java.io.IOException;
 import java.sql.Date;
 
 import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.By;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
@@ -92,7 +93,7 @@ public class TransferNowCurrentDate {
 	
 	  @Test(priority = 20, groups = {"smoke", "regression"})
 	  @Parameters({"userName", "passWord", "secretQuestion"})
-	  public void verifyQuickPayFutureDate(String userName, String passWord, String secretQuestion) 
+	  public void verifyQuickPayFutureDate(String userName, String passWord, String secretQuestion) throws InterruptedException 
 	  {
 		   TestCase = "335";
 		   LoginActions.loginUn(driver, userName);
@@ -101,11 +102,17 @@ public class TransferNowCurrentDate {
 		   LoginActions.secretQuestion(driver, secretQuestion);
 		   LoginActions.privateDevice(driver);
 		   LoginActions.submit(driver);
-		   DashboardActions.quickPay(driver);
-		   DashboardActions.selectRecipient(driver);
-		   Utils.isTextPresent(driver, "BEST BUY");
-		   DashboardActions.myCreditCardAccount(driver);
+		   DashboardActions.transferNow(driver);
+		   DashboardActions.transferNowSelectRecipient(driver);
+		   Utils.isTextPresent(driver, "My Credit Card Account");
+		   DashboardActions.transferNowMyCreditCardAccount(driver);
 		   Utils.isTextPresent(driver, "AMOUNT");
+		   driver.findElement(By.name("amount")).clear();
+		   DashboardActions.setTransferNowAmount(driver, "1");
+		   DashboardActions.transferNowSubmitButton(driver);
+		   Utils.isTextPresent(driver, "A transfer of $1.00 to My Deposit - Savings Account is scheduled for ");
+		   DashboardActions.transferNowConfirm(driver);
+		   Utils.isTextPresent(driver, "Success");
 	  } 
 
   /*@AfterMethod
