@@ -1,11 +1,10 @@
-package com.d3.endToEnd;
+package com.d3.dashboard;
 
 import java.io.File;
 import java.io.IOException;
 import java.sql.Date;
 
 import org.apache.commons.io.FileUtils;
-import org.openqa.selenium.By;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
@@ -30,8 +29,7 @@ import com.d3.transactions.transactionsActions;
 import com.d3.utils.Utils;
 import com.d3.utils.Utils.BrowserType;
 //import com.gurock.testrail.APIException;
-
-public class QuickPayPaymentCurrentDate {
+public class TransferNowCurrentDate {
 	
 	public WebDriver driver;
 	private BrowserType browser;
@@ -54,7 +52,7 @@ public class QuickPayPaymentCurrentDate {
 
 	@BeforeClass
 	@Parameters({"browse", "WebdriverTimeout", "baseurl"})
-	public void launchBrowser(@Optional("FIREFOX") String browse, String WebdriverTimeout, String baseurl)
+	public void launchBrowser(@Optional("CHROME") String browse, String WebdriverTimeout, String baseurl)
 	{
     	switch (browse)
     	{
@@ -84,7 +82,7 @@ public class QuickPayPaymentCurrentDate {
 
 	}
 				
-/*	@BeforeClass
+	/*@BeforeClass
 	@Parameters({"testRailUrl", "testRailUserName", "testRailPassWord"})
 	public void initTestRails(String testRailUrl, String testRailUserName, String testRailPassWord)
 	{	
@@ -92,11 +90,11 @@ public class QuickPayPaymentCurrentDate {
 	}*/
 	
 	
-	  @Test(priority = 17, groups = {"smoke", "regression"})
+	  @Test(priority = 20, groups = {"smoke", "regression"})
 	  @Parameters({"userName", "passWord", "secretQuestion"})
-	  public void verifyQuickPayCurrentDate(String userName, String passWord, String secretQuestion) 
+	  public void verifyQuickPayFutureDate(String userName, String passWord, String secretQuestion) 
 	  {
-		   TestCase = "333";
+		   TestCase = "335";
 		   LoginActions.loginUn(driver, userName);
 		   LoginActions.loginPw(driver, passWord);
 		   LoginActions.submit(driver);
@@ -108,17 +106,9 @@ public class QuickPayPaymentCurrentDate {
 		   Utils.isTextPresent(driver, "BEST BUY");
 		   DashboardActions.myCreditCardAccount(driver);
 		   Utils.isTextPresent(driver, "AMOUNT");
-		   driver.findElement(By.name("amount")).clear();
-		   DashboardActions.setQuickPayAmount(driver, "1");
-		   driver.findElement(By.name("scheduledDate")).clear();
-		   DashboardActions.quickPayCalendarCurrentDate(driver);
-		   DashboardActions.quickPaySubmitButton(driver);
-		   Utils.isTextPresent(driver, "A payment of $1.00 to BEST BUY is scheduled for");
-		   DashboardActions.quickPayConfirm(driver);
-		   Utils.isTextPresent(driver, "The payment was not scheduled. Please try again.");
 	  } 
 
-/*  @AfterMethod
+  /*@AfterMethod
   public void updateTestRails(ITestResult result) 
   {
      if (result.getStatus() == ITestResult.SUCCESS) {

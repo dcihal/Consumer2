@@ -1,11 +1,10 @@
-package com.d3.endToEnd;
+package com.d3.dashboard;
 
 import java.io.File;
 import java.io.IOException;
 import java.sql.Date;
 
 import org.apache.commons.io.FileUtils;
-import org.openqa.selenium.By;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
@@ -31,7 +30,7 @@ import com.d3.utils.Utils;
 import com.d3.utils.Utils.BrowserType;
 //import com.gurock.testrail.APIException;
 
-public class QuickPayPaymentFutureDate {
+public class TransferNowFutureDate {
 	
 	public WebDriver driver;
 	private BrowserType browser;
@@ -84,7 +83,7 @@ public class QuickPayPaymentFutureDate {
 
 	}
 				
-/*	@BeforeClass
+	/*@BeforeClass
 	@Parameters({"testRailUrl", "testRailUserName", "testRailPassWord"})
 	public void initTestRails(String testRailUrl, String testRailUserName, String testRailPassWord)
 	{	
@@ -92,11 +91,11 @@ public class QuickPayPaymentFutureDate {
 	}*/
 	
 	
-	  @Test(priority = 18, groups = {"smoke", "regression"})
+	  @Test(priority = 19, groups = {"smoke", "regression"})
 	  @Parameters({"userName", "passWord", "secretQuestion"})
-	  public void verifyQuickPayFutureDate(String userName, String passWord, String secretQuestion) throws InterruptedException 
+	  public void verifyQuickPayFutureDate(String userName, String passWord, String secretQuestion) 
 	  {
-		   TestCase = "334";
+		   TestCase = "332";
 		   LoginActions.loginUn(driver, userName);
 		   LoginActions.loginPw(driver, passWord);
 		   LoginActions.submit(driver);
@@ -108,15 +107,6 @@ public class QuickPayPaymentFutureDate {
 		   Utils.isTextPresent(driver, "BEST BUY");
 		   DashboardActions.myCreditCardAccount(driver);
 		   Utils.isTextPresent(driver, "AMOUNT");
-		   driver.findElement(By.name("amount")).clear();
-		   DashboardActions.setQuickPayAmount(driver, "1");
-		   Thread.sleep(1000);
-		   driver.findElement(By.name("scheduledDate")).clear();
-		   DashboardActions.quickPayCalendarSpecificDate(driver, "12/31/2015");
-		   DashboardActions.quickPaySubmitButton(driver);
-		   Utils.isTextPresent(driver, "A payment of $1.00 to BEST BUY is scheduled for 12/31/2015");
-		   DashboardActions.quickPayConfirm(driver);
-		   Utils.isTextPresent(driver, "The payment was not scheduled. Please try again.");
 	  } 
 
   /*@AfterMethod
@@ -163,3 +153,5 @@ public class QuickPayPaymentFutureDate {
   }
   
 }
+
+
