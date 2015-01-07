@@ -5,7 +5,6 @@ package com.d3.dashboard.plan;
 	import java.sql.Date;
 
 	import org.apache.commons.io.FileUtils;
-	import org.openqa.selenium.By;
 	import org.openqa.selenium.OutputType;
 	import org.openqa.selenium.TakesScreenshot;
 	import org.openqa.selenium.WebDriver;
@@ -17,16 +16,9 @@ package com.d3.dashboard.plan;
 	import org.testng.annotations.Parameters;
 	import org.testng.annotations.Test;
 
-	import com.d3.accounts.accountsActions;
 	import com.d3.dashboard.dashboardActions;
-	import com.d3.help.helpActions;
 	import com.d3.login.loginActions;
-	import com.d3.messages.messagesActions;
-	import com.d3.moneyMovement.moneyMovementActions;
-	import com.d3.planning.planningActions;
-	import com.d3.settings.settingsActions;
 	//import com.d3.testrails.D3TestRails;
-	import com.d3.transactions.transactionsActions;
 	import com.d3.utils.Utils;
 	import com.d3.utils.Utils.BrowserType;
 	//import com.gurock.testrail.APIException;

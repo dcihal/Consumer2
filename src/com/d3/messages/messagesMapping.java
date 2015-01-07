@@ -17,5 +17,13 @@ public class messagesMapping {
     @FindBy(how = How.CSS, using = "div.nav-icon.messages.center")
     
     public WebElement Messages;
+    
+    @FindBy(how = How.NAME, using = "searchTerm")
+    
+    public WebElement SearchField;
+    
+    @FindBy(how = How.CLASS_NAME, using = "icon-search")
+    
+    public WebElement SearchSubmit;
 
 }
