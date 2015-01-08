@@ -94,7 +94,7 @@ public class QuickPayPaymentFutureDate {
 	
 	  @Test(priority = 18, groups = {"smoke", "regression"})
 	  @Parameters({"userName", "passWord", "secretQuestion"})
-	  public void verifyQuickPayFutureDate(String userName, String passWord, String secretQuestion) throws InterruptedException 
+	  public void verifyQuickPayPaymentFutureDate(String userName, String passWord, String secretQuestion) throws InterruptedException 
 	  {
 		   TestCase = "334";
 		   LoginActions.loginUn(driver, userName);

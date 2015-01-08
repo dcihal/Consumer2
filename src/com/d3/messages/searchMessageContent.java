@@ -94,7 +94,7 @@ public class searchMessageContent {
 	
 	  @Test(priority = 17, groups = {"smoke", "regression"})
 	  @Parameters({"userName", "passWord", "secretQuestion"})
-	  public void verifyQuickPayCurrentDate(String userName, String passWord, String secretQuestion) throws InterruptedException 
+	  public void verifySearchMessageContent(String userName, String passWord, String secretQuestion) throws InterruptedException 
 	  {
 		   TestCase = "333";
 		   LoginActions.loginUn(driver, userName);

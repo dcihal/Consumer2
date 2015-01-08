@@ -29,8 +29,7 @@ public class messagesMapping {
     @FindBy(how = How.CLASS_NAME, using = "dropdown-toggle")
     
     public WebElement SearchCategory;
-    
-    
+        
     @FindBy(how = How.CLASS_NAME, using = "icon-calendar")
     
     public WebElement MessagesCalendar;
@@ -47,6 +46,17 @@ public class messagesMapping {
     
     public WebElement MessagesSearch;
     
+    @FindBy(how = How.XPATH, using = "//*[@id='main']/section/section/ul[2]/li[1]/div[1]/div/div[1]/input")
+    
+    public WebElement FirstCheckBox;
+    
+    @FindBy(how = How.XPATH, using = "//*[@id='main']/section/section/ul[2]/li[2]/div[1]/div/div[1]/input")
+    
+    public WebElement SecondCheckBox;
+      
+    @FindBy(how = How.LINK_TEXT, using = "Delete Selected")
+    
+    public WebElement MessagesDeleteButton;
     
       
 

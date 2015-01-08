@@ -94,7 +94,7 @@ public class QuickPayPaymentCurrentDate {
 	
 	  @Test(priority = 17, groups = {"smoke", "regression"})
 	  @Parameters({"userName", "passWord", "secretQuestion"})
-	  public void verifyQuickPayCurrentDate(String userName, String passWord, String secretQuestion) 
+	  public void verifyQuickPayPaaymentCurrentDate(String userName, String passWord, String secretQuestion) 
 	  {
 		   TestCase = "333";
 		   LoginActions.loginUn(driver, userName);

@@ -93,7 +93,7 @@ public class TransferNowCurrentDate {
 	
 	  @Test(priority = 20, groups = {"smoke", "regression"})
 	  @Parameters({"userName", "passWord", "secretQuestion"})
-	  public void verifyQuickPayFutureDate(String userName, String passWord, String secretQuestion) throws InterruptedException 
+	  public void verifyTransferNowCurrentDate(String userName, String passWord, String secretQuestion) throws InterruptedException 
 	  {
 		   TestCase = "335";
 		   LoginActions.loginUn(driver, userName);

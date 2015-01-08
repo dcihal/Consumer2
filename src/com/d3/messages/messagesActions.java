@@ -77,4 +77,33 @@ public class messagesActions {
 	    Mapping.MessagesSearch.click();
     }
     
+    public void deleteSingleMessage(WebDriver driver)
+    {
+	    wait.until(ExpectedConditions.visibilityOf(Mapping.FirstCheckBox));	
+	    new Actions(driver).moveToElement(Mapping.FirstCheckBox).perform();
+	    Mapping.FirstCheckBox.click();
+	    wait.until(ExpectedConditions.visibilityOf(Mapping.MessagesDeleteButton));
+	    new Actions(driver).moveToElement(Mapping.MessagesDeleteButton).perform();
+	    Mapping.MessagesDeleteButton.click();
+    }
+    
+    public void deleteMultipleMessages(WebDriver driver)
+    {
+	    wait.until(ExpectedConditions.visibilityOf(Mapping.FirstCheckBox));
+	    new Actions(driver).moveToElement(Mapping.FirstCheckBox).perform();
+	    Mapping.FirstCheckBox.click();
+	    new Actions(driver).moveToElement(Mapping.SecondCheckBox).perform();
+	    Mapping.SecondCheckBox.click();
+	    wait.until(ExpectedConditions.visibilityOf(Mapping.MessagesDeleteButton));
+	    new Actions(driver).moveToElement(Mapping.MessagesDeleteButton).perform();
+	    Mapping.MessagesDeleteButton.click();
+    }
+    
+    public void messagesDeleteButton(WebDriver driver)
+    {
+	    wait.until(ExpectedConditions.visibilityOf(Mapping.MessagesDeleteButton));	
+	    new Actions(driver).moveToElement(Mapping.MessagesDeleteButton).perform();
+	    Mapping.MessagesDeleteButton.click();
+    }
+    
 }
