@@ -81,6 +81,7 @@ public class searchDateRange {
 		driver.get(baseurl);
 		LoginActions.init(driver, timeout);
 		DashboardActions.init(driver, timeout);
+		MessagesActions.init(driver, timeout);
 
 	}
 				
@@ -104,8 +105,12 @@ public class searchDateRange {
 		   LoginActions.privateDevice(driver);
 		   LoginActions.submit(driver);
 		   MessagesActions.messagesButton(driver);
-		   MessagesActions.searchField(driver, "Message for Samuel Adams");
-		   Utils.isTextPresent(driver, "Internal Transfer Created Alert from your bank");
+		   MessagesActions.messagesCalendar(driver);
+		   MessagesActions.messagesCalendarSpecificDate(driver, "12/31/2013");
+		   MessagesActions.messagesCalendarCurrentDate(driver);
+		   MessagesActions.messagesSearch(driver);
+		   Utils.isTextPresent(driver, "Successful Transfer Alert from your bank");
+		   Utils.isTextPresent(driver, "Start Date: 12/31/2013");
 	  } 
 
 /*  @AfterMethod

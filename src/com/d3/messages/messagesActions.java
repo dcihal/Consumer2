@@ -7,6 +7,8 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import com.d3.utils.Utils;
+
 
 public class messagesActions {
 	
@@ -46,5 +48,33 @@ public class messagesActions {
 	    new Actions(driver).moveToElement(Mapping.SearchCategory).click().perform();
 	    driver.findElement(By.linkText(searchCategory)).click();
     }
+    
+    public void messagesCalendar(WebDriver driver)
+    {
+	    wait.until(ExpectedConditions.visibilityOf(Mapping.MessagesCalendar));	
+	    new Actions(driver).moveToElement(Mapping.MessagesCalendar).perform();
+	    Mapping.MessagesCalendar.click();
+    }
+    
+    public void messagesCalendarCurrentDate(WebDriver driver)
+    {
+	    wait.until(ExpectedConditions.visibilityOf(Mapping.MessagesCalendarEndDate));	
+	    new Actions(driver).moveToElement(Mapping.MessagesCalendarEndDate).perform();
+	    Mapping.MessagesCalendarEndDate.sendKeys(Utils.getDateMMddyyyywithSlash()); 
+    }
+    
+    public void messagesCalendarSpecificDate(WebDriver driver, String date)
+    {
+	    wait.until(ExpectedConditions.visibilityOf(Mapping.MessagesCalendarStartDate));	
+	    new Actions(driver).moveToElement(Mapping.MessagesCalendarStartDate).perform();
+	    Mapping.MessagesCalendarStartDate.sendKeys(date); 
+    }
 
+    public void messagesSearch(WebDriver driver)
+    {
+	    wait.until(ExpectedConditions.visibilityOf(Mapping.MessagesSearch));	
+	    new Actions(driver).moveToElement(Mapping.MessagesSearch).perform();
+	    Mapping.MessagesSearch.click();
+    }
+    
 }

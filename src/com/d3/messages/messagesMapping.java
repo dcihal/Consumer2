@@ -30,5 +30,24 @@ public class messagesMapping {
     
     public WebElement SearchCategory;
     
+    
+    @FindBy(how = How.CLASS_NAME, using = "icon-calendar")
+    
+    public WebElement MessagesCalendar;
+    
+    @FindBy(how = How.NAME, using = "startDate")
+    
+    public WebElement MessagesCalendarStartDate;
+    
+    @FindBy(how = How.NAME, using = "endDate")
+    
+    public WebElement MessagesCalendarEndDate;
+    
+    @FindBy(how = How.LINK_TEXT, using = "Search")
+    
+    public WebElement MessagesSearch;
+    
+    
+      
 
 }
