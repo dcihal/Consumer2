@@ -81,6 +81,7 @@ public class searchMessageType {
 		driver.get(baseurl);
 		LoginActions.init(driver, timeout);
 		DashboardActions.init(driver, timeout);
+		MessagesActions.init(driver, timeout);
 
 	}
 				
@@ -103,19 +104,11 @@ public class searchMessageType {
 		   LoginActions.secretQuestion(driver, secretQuestion);
 		   LoginActions.privateDevice(driver);
 		   LoginActions.submit(driver);
-		   DashboardActions.quickPay(driver);
-		   DashboardActions.quickPaySelectRecipient(driver);
-		   Utils.isTextPresent(driver, "BEST BUY");
-		   DashboardActions.bestBuyAccount(driver);
-		   Utils.isTextPresent(driver, "AMOUNT");
-		   driver.findElement(By.name("amount")).clear();
-		   DashboardActions.setQuickPayAmount(driver, "1");
-		   driver.findElement(By.name("scheduledDate")).clear();
-		   DashboardActions.quickPayCalendarCurrentDate(driver);
-		   DashboardActions.quickPaySubmitButton(driver);
-		   Utils.isTextPresent(driver, "A payment of $1.00 to BEST BUY is scheduled for");
-		   DashboardActions.quickPayConfirm(driver);
-		   Utils.isTextPresent(driver, "The payment was not scheduled. Please try again.");
+		   MessagesActions.messagesButton(driver);
+		   MessagesActions.searchDropDown(driver, "E-Bill Messages");
+		   Utils.isTextPresent(driver, "Payment Reminder");
+		   Utils.isTextPresent(driver, "Payment Message");
+		   Utils.isTextPresent(driver, "Payment Reminder of $250.00 to TEST BILLER 1");
 	  } 
 
 /*  @AfterMethod

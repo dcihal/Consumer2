@@ -1,5 +1,6 @@
 package com.d3.messages;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.PageFactory;
@@ -37,6 +38,13 @@ public class messagesActions {
 	    new Actions(driver).moveToElement(Mapping.SearchField).perform();
 	    Mapping.SearchField.sendKeys(searchTerm);
 	    Mapping.SearchSubmit.click();
+    }
+    
+    public void searchDropDown(WebDriver driver, String searchCategory)
+    {
+	    wait.until(ExpectedConditions.visibilityOf(Mapping.SearchCategory));	
+	    new Actions(driver).moveToElement(Mapping.SearchCategory).click().perform();
+	    driver.findElement(By.linkText(searchCategory)).click();
     }
 
 }

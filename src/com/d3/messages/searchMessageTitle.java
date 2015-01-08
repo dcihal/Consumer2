@@ -82,6 +82,7 @@ public class searchMessageTitle {
 		driver.get(baseurl);
 		LoginActions.init(driver, timeout);
 		DashboardActions.init(driver, timeout);
+		MessagesActions.init(driver, timeout);
 
 	}
 				
@@ -95,7 +96,7 @@ public class searchMessageTitle {
 	
 	  @Test(priority = 17, groups = {"smoke", "regression"})
 	  @Parameters({"userName", "passWord", "secretQuestion"})
-	  public void verifyQuickPayCurrentDate(String userName, String passWord, String secretQuestion) 
+	  public void verifyQuickPayCurrentDate(String userName, String passWord, String secretQuestion) throws InterruptedException 
 	  {
 		   TestCase = "333";
 		   LoginActions.loginUn(driver, userName);
@@ -104,19 +105,11 @@ public class searchMessageTitle {
 		   LoginActions.secretQuestion(driver, secretQuestion);
 		   LoginActions.privateDevice(driver);
 		   LoginActions.submit(driver);
-		   DashboardActions.quickPay(driver);
-		   DashboardActions.quickPaySelectRecipient(driver);
-		   Utils.isTextPresent(driver, "BEST BUY");
-		   DashboardActions.bestBuyAccount(driver);
-		   Utils.isTextPresent(driver, "AMOUNT");
-		   driver.findElement(By.name("amount")).clear();
-		   DashboardActions.setQuickPayAmount(driver, "1");
-		   driver.findElement(By.name("scheduledDate")).clear();
-		   DashboardActions.quickPayCalendarCurrentDate(driver);
-		   DashboardActions.quickPaySubmitButton(driver);
-		   Utils.isTextPresent(driver, "A payment of $1.00 to BEST BUY is scheduled for");
-		   DashboardActions.quickPayConfirm(driver);
-		   Utils.isTextPresent(driver, "The payment was not scheduled. Please try again.");
+		   MessagesActions.messagesButton(driver);
+		   MessagesActions.searchField(driver, "Message for Samuel Adams");
+		   Utils.isTextPresent(driver, "Internal Transfer Created Alert from your bank");
+		   // STILL NEED TO DO AN ASSERT THAT TEXT IS NOT PRESENT ON THE PAGE //
+		   //Utils.isTextNotPresent(driver, "Successful Transfer Alert from your bank");
 	  } 
 
 /*  @AfterMethod

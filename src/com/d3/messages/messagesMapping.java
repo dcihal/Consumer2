@@ -25,5 +25,10 @@ public class messagesMapping {
     @FindBy(how = How.CLASS_NAME, using = "icon-search")
     
     public WebElement SearchSubmit;
+    
+    @FindBy(how = How.CLASS_NAME, using = "dropdown-toggle")
+    
+    public WebElement SearchCategory;
+    
 
 }
