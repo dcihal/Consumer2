@@ -8,19 +8,20 @@ import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.*;
 import org.testng.annotations.*;
 import org.testng.ITestResult;
+import com.d3.testrails.D3TestRails;
+import com.d3.utils.*;
+import com.d3.utils.Utils.BrowserType;
 
-import com.d3.accounts.accountsActions;
-import com.d3.dashboard.dashboardActions;
-import com.d3.help.helpActions;
 import com.d3.login.loginActions;
+import com.d3.accounts.accountsActions;
+import com.d3.help.helpActions;
 import com.d3.messages.messagesActions;
 import com.d3.moneyMovement.moneyMovementActions;
 import com.d3.planning.planningActions;
 import com.d3.settings.settingsActions;
-import com.d3.testrails.D3TestRails;
 import com.d3.transactions.transactionsActions;
-import com.d3.utils.*;
-import com.d3.utils.Utils.BrowserType;
+import com.d3.dashboard.dashboardActions;
+
 //import com.gurock.testrail.APIException;
 
 
@@ -31,9 +32,9 @@ public class D3AutomationDemo {
 	String TestCase; 
 	String TestRun = "1"; 
 	loginActions LoginActions = new loginActions();
+	accountsActions AccountsActions = new accountsActions();
 	dashboardActions DashboardActions = new dashboardActions();
 	messagesActions MessagesActions = new messagesActions();
-	accountsActions AccountsActions = new accountsActions();
 	transactionsActions TransactionsActions = new transactionsActions();
 	moneyMovementActions MoneyMovementActions = new moneyMovementActions();
 	planningActions PlanningActions = new planningActions();
@@ -74,9 +75,9 @@ public class D3AutomationDemo {
 		
 		driver.get(baseurl);
 		LoginActions.init(driver, timeout);
+		AccountsActions.init(driver, timeout);
 		DashboardActions.init(driver, timeout);
 		MessagesActions.init(driver, timeout);
-		AccountsActions.init(driver, timeout);
 		TransactionsActions.init(driver, timeout);
 		MoneyMovementActions.init(driver, timeout);
 		PlanningActions.init(driver, timeout);

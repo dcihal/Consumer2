@@ -15,6 +15,5 @@
 			</run>
 		</groups>
 		<classes>
-			<class name="com.d3.accounts.asset.lookAndFeel"></class>
 			<class name="com.d3.endToEnd.D3AutomationDemo"></class></classes></test>
 </suite>

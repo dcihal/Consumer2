@@ -17,16 +17,8 @@ import org.testng.annotations.Optional;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
-import com.d3.accounts.accountsActions;
 import com.d3.dashboard.dashboardActions;
-import com.d3.help.helpActions;
 import com.d3.login.loginActions;
-import com.d3.messages.messagesActions;
-import com.d3.moneyMovement.moneyMovementActions;
-import com.d3.planning.planningActions;
-import com.d3.settings.settingsActions;
-//import com.d3.testrails.D3TestRails;
-import com.d3.transactions.transactionsActions;
 import com.d3.utils.Utils;
 import com.d3.utils.Utils.BrowserType;
 //import com.gurock.testrail.APIException;
@@ -37,15 +29,12 @@ public class QuickPayPaymentCurrentDate {
 	private BrowserType browser;
 	String TestCase; 
 	String TestRun = "16"; 
+		
 	loginActions LoginActions = new loginActions();
 	dashboardActions DashboardActions = new dashboardActions();
-	messagesActions MessagesActions = new messagesActions();
-	accountsActions AccountsActions = new accountsActions();
-	transactionsActions TransactionsActions = new transactionsActions();
-	moneyMovementActions MoneyMovementActions = new moneyMovementActions();
-	planningActions PlanningActions = new planningActions();
-	helpActions HelpActions = new helpActions();
-	settingsActions SettingsActions = new settingsActions();
+
+	
+	
 	//D3TestRails d3testrails = new D3TestRails();
 	Utils utils = new Utils();
 

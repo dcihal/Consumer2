@@ -2,22 +2,22 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="D3AutomationDemo Tests" duration-ms="13092" started-at="2015-01-07T18:44:23Z" finished-at="2015-01-07T18:44:36Z">
+  <suite name="D3AutomationDemo Tests" duration-ms="33499" started-at="2015-01-08T21:14:00Z" finished-at="2015-01-08T21:14:34Z">
     <groups>
       <group name="regression">
-        <method signature="TransferNowCurrentDate.verifyQuickPayFutureDate(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.d3.dashboard.TransferNowCurrentDate@1150435]" name="verifyQuickPayFutureDate" class="com.d3.dashboard.TransferNowCurrentDate"/>
+        <method signature="QuickPayPaymentCurrentDate.verifyQuickPayPaaymentCurrentDate(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.d3.dashboard.QuickPayPaymentCurrentDate@1150435]" name="verifyQuickPayPaaymentCurrentDate" class="com.d3.dashboard.QuickPayPaymentCurrentDate"/>
       </group> <!-- regression -->
       <group name="smoke">
-        <method signature="TransferNowCurrentDate.verifyQuickPayFutureDate(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.d3.dashboard.TransferNowCurrentDate@1150435]" name="verifyQuickPayFutureDate" class="com.d3.dashboard.TransferNowCurrentDate"/>
+        <method signature="QuickPayPaymentCurrentDate.verifyQuickPayPaaymentCurrentDate(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.d3.dashboard.QuickPayPaymentCurrentDate@1150435]" name="verifyQuickPayPaaymentCurrentDate" class="com.d3.dashboard.QuickPayPaymentCurrentDate"/>
       </group> <!-- smoke -->
     </groups>
-    <test name="Default test" duration-ms="13092" started-at="2015-01-07T18:44:23Z" finished-at="2015-01-07T18:44:36Z">
-      <class name="com.d3.dashboard.TransferNowCurrentDate">
-        <test-method status="PASS" signature="launchBrowser(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.d3.dashboard.TransferNowCurrentDate@1150435]" name="launchBrowser" is-config="true" duration-ms="5435" started-at="2015-01-07T12:44:23Z" finished-at="2015-01-07T12:44:28Z">
+    <test name="Default test" duration-ms="33499" started-at="2015-01-08T21:14:00Z" finished-at="2015-01-08T21:14:34Z">
+      <class name="com.d3.dashboard.QuickPayPaymentCurrentDate">
+        <test-method status="PASS" signature="launchBrowser(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.d3.dashboard.QuickPayPaymentCurrentDate@1150435]" name="launchBrowser" is-config="true" duration-ms="11967" started-at="2015-01-08T15:14:00Z" finished-at="2015-01-08T15:14:12Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[CHROME]]>
+                <![CDATA[FIREFOX]]>
               </value>
             </param>
             <param index="1">
@@ -34,7 +34,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchBrowser -->
-        <test-method status="PASS" signature="verifyQuickPayFutureDate(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.d3.dashboard.TransferNowCurrentDate@1150435]" name="verifyQuickPayFutureDate" duration-ms="6504" started-at="2015-01-07T12:44:28Z" finished-at="2015-01-07T12:44:35Z">
+        <test-method status="PASS" signature="verifyQuickPayPaaymentCurrentDate(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.d3.dashboard.QuickPayPaymentCurrentDate@1150435]" name="verifyQuickPayPaaymentCurrentDate" duration-ms="21291" started-at="2015-01-08T15:14:12Z" finished-at="2015-01-08T15:14:34Z">
           <params>
             <param index="0">
               <value>
@@ -54,23 +54,23 @@
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyQuickPayFutureDate -->
-        <test-method status="PASS" signature="terminateBrowser()[pri:0, instance:com.d3.dashboard.TransferNowCurrentDate@1150435]" name="terminateBrowser" is-config="true" duration-ms="1139" started-at="2015-01-07T12:44:35Z" finished-at="2015-01-07T12:44:36Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- terminateBrowser -->
-        <test-method status="PASS" signature="takeScreenShotOnFailure(org.testng.ITestResult)[pri:0, instance:com.d3.dashboard.TransferNowCurrentDate@1150435]" name="takeScreenShotOnFailure" is-config="true" duration-ms="0" started-at="2015-01-07T12:44:35Z" finished-at="2015-01-07T12:44:35Z">
+        </test-method> <!-- verifyQuickPayPaaymentCurrentDate -->
+        <test-method status="PASS" signature="takeScreenShotOnFailure(org.testng.ITestResult)[pri:0, instance:com.d3.dashboard.QuickPayPaymentCurrentDate@1150435]" name="takeScreenShotOnFailure" is-config="true" duration-ms="0" started-at="2015-01-08T15:14:34Z" finished-at="2015-01-08T15:14:34Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifyQuickPayFutureDate status=SUCCESS method=TransferNowCurrentDate.verifyQuickPayFutureDate(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.d3.dashboard.TransferNowCurrentDate@1150435] output={null}]]]>
+                <![CDATA[[TestResult name=verifyQuickPayPaaymentCurrentDate status=SUCCESS method=QuickPayPaymentCurrentDate.verifyQuickPayPaaymentCurrentDate(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.d3.dashboard.QuickPayPaymentCurrentDate@1150435] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- takeScreenShotOnFailure -->
-      </class> <!-- com.d3.dashboard.TransferNowCurrentDate -->
+        <test-method status="PASS" signature="terminateBrowser()[pri:0, instance:com.d3.dashboard.QuickPayPaymentCurrentDate@1150435]" name="terminateBrowser" is-config="true" duration-ms="230" started-at="2015-01-08T15:14:34Z" finished-at="2015-01-08T15:14:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- terminateBrowser -->
+      </class> <!-- com.d3.dashboard.QuickPayPaymentCurrentDate -->
     </test> <!-- Default test -->
   </suite> <!-- D3AutomationDemo Tests -->
 </testng-results>
