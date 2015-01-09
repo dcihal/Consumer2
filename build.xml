@@ -70,6 +70,12 @@
 	     <classpath refid="cp"/>
     </javac>
  	
+    <!-- compile the d3.login directories --> 		
+    <javac includeantruntime="false" destdir="${build.dir}" debug="on" deprecation="${javac.deprecation}" verbose="${javac.verbose}" failonerror="true"> 
+   	   <src path="${src.dir.d3.login}"/>
+   	     <classpath refid="cp"/>
+    </javac>
+ 	
 	<!-- compile the d3.accounts directories --> 		
 	<javac includeantruntime="false" destdir="${build.dir}" debug="on" deprecation="${javac.deprecation}" verbose="${javac.verbose}" failonerror="true"> 
 	   <src path="${src.dir.d3.accounts}"/>
@@ -79,12 +85,6 @@
     <!-- compile the d3.help directories --> 		
     <javac includeantruntime="false" destdir="${build.dir}" debug="on" deprecation="${javac.deprecation}" verbose="${javac.verbose}" failonerror="true"> 
    	   <src path="${src.dir.d3.help}"/>
-   	     <classpath refid="cp"/>
-    </javac>
- 	
-    <!-- compile the d3.login directories --> 		
-    <javac includeantruntime="false" destdir="${build.dir}" debug="on" deprecation="${javac.deprecation}" verbose="${javac.verbose}" failonerror="true"> 
-   	   <src path="${src.dir.d3.login}"/>
    	     <classpath refid="cp"/>
     </javac>
  	
