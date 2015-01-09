@@ -92,8 +92,12 @@ package com.d3.accounts;
 			   LoginActions.privateDevice(driver);
 			   LoginActions.submit(driver);
 			   AccountsActions.accountsButton(driver);
-			   
-			   Utils.isTextPresent(driver, "The payment was not scheduled. Please try again.");
+			   AccountsActions.assetAccountButton(driver);
+			   AccountsActions.excludeButton(driver);
+			   Utils.isTextPresent(driver, "This account will be added to your Budget, Goals, Net Worth, and Current Month Status calculations. Are you sure?");
+			   AccountsActions.excludeButtonContinue(driver);
+			   Utils.isTextPresent(driver, "Deposit - Checking");
+			   Utils.isTextNotPresent(driver, "EXCLUDED");
 		  } 
 
 	/*  @AfterMethod

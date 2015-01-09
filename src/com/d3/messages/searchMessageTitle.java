@@ -92,8 +92,8 @@ public class searchMessageTitle {
 		   MessagesActions.messagesButton(driver);
 		   MessagesActions.searchField(driver, "Message for Samuel Adams");
 		   Utils.isTextPresent(driver, "Internal Transfer Created Alert from your bank");
-		   // STILL NEED TO DO AN ASSERT THAT TEXT IS NOT PRESENT ON THE PAGE //
-		   //Utils.isTextNotPresent(driver, "Successful Transfer Alert from your bank");
+		   Utils.isTextNotPresent(driver, "Successful Transfer Alert from your bank");
+		   //  FAILING AND DON'T KNOW WHY... SHOULD BE ABLE TO SEARCH THE MESSAGE TITLE
 	  } 
 
 /*  @AfterMethod

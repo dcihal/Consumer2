@@ -28,4 +28,23 @@ public class accountsActions {
 	    Mapping.Accounts.click(); 
 	}
 
+    public void assetAccountButton(WebDriver driver)
+    {
+	    wait.until(ExpectedConditions.visibilityOf(Mapping.AssetAccount));	
+	    Mapping.AssetAccount.click(); 
+	}
+    
+    public void excludeButton(WebDriver driver)
+    {
+	    wait.until(ExpectedConditions.visibilityOf(Mapping.ExcludeButton));	
+	    Mapping.ExcludeButton.click(); 
+	}
+    
+    public void excludeButtonContinue(WebDriver driver)
+    {
+	    wait.until(ExpectedConditions.visibilityOf(Mapping.ExcludeButtonContinue));	
+	    Mapping.ExcludeButtonContinue.click(); 
+	}
+
+    
 }

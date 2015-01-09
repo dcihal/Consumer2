@@ -10,6 +10,7 @@ import java.sql.Statement;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.List;
 import java.util.Properties;
 import java.util.Random;
 import java.util.concurrent.TimeUnit;
@@ -67,6 +68,13 @@ public final class Utils  {
         } 
     } //End is isTextPresent 
     
+
+    public static void isTextNotPresent(WebDriver driver, String what) { 
+    	Utils.sleep(10000);
+    	List<WebElement> list = driver.findElements(By.xpath("//*[contains(text(),'" + what + "')]")); 
+        assert (list.size() == 0);
+    }
+  
 
     public static long createRandomInteger(int length) {
         Random random = new Random();

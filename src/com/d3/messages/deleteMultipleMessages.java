@@ -91,9 +91,8 @@ package com.d3.messages;
 			   LoginActions.submit(driver);
 			   MessagesActions.messagesButton(driver);
 			   MessagesActions.deleteMultipleMessages(driver);
-			   // STILL NEED TO ADD ASSERTIONS TO MAKE SURE THE MESSAGE ACTUALLY GOT DELETED
-			   Utils.isTextPresent(driver, "1Successful Transfer Alert from your bank");
-			   //Utils.isTextPresent(driver, "Start Date: 12/31/2013");
+			   Utils.isTextPresent(driver, "Successful Transfer Alert from your bank");
+			   Utils.isTextNotPresent(driver, "Contact Information Updated");
 		  } 
 
 	/*  @AfterMethod
