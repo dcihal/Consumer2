@@ -38,7 +38,7 @@ package com.d3.messages;
 	   	//Properties p = Utils.loadProperties(".\\conf\\properties.properties");            
 
 
-		@BeforeClass
+		@BeforeClass(alwaysRun = true)
 		@Parameters({"browse", "WebdriverTimeout", "baseurl"})
 		public void launchBrowser(@Optional("FIREFOX") String browse, String WebdriverTimeout, String baseurl)
 		{
@@ -70,7 +70,7 @@ package com.d3.messages;
 
 		}
 					
-	/*	@BeforeClass
+	/*	@BeforeClass(alwaysRun = true)
 		@Parameters({"testRailUrl", "testRailUserName", "testRailPassWord"})
 		public void initTestRails(String testRailUrl, String testRailUserName, String testRailPassWord)
 		{	
@@ -95,7 +95,7 @@ package com.d3.messages;
 			   Utils.isTextNotPresent(driver, "Contact Information Updated");
 		  } 
 
-	/*  @AfterMethod
+	/*  @AfterMethod(alwaysRun = true)
 	  public void updateTestRails(ITestResult result) 
 	  {
 	     if (result.getStatus() == ITestResult.SUCCESS) {
@@ -117,7 +117,7 @@ package com.d3.messages;
 	     }
 	  }*/  
 	     
-	  @AfterMethod
+	  @AfterMethod(alwaysRun = true)
 	  public void takeScreenShotOnFailure(ITestResult testResult) throws IOException 
 	  {
 		  
@@ -132,7 +132,7 @@ package com.d3.messages;
 	  
 
 	   
-	  @AfterClass
+	  @AfterClass(alwaysRun = true)
 	  public void terminateBrowser()
 	  {
 		  driver.quit();

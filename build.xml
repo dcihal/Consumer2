@@ -45,6 +45,10 @@
        	<fileset dir="${build.dir}"/>
      </delete>
 	
+    <delete includeemptydirs="true" verbose="${javac.verbose}" failonerror="false">
+      	<fileset dir="${reports.dir}"/>
+    </delete>
+ 	
  	<!-- make directories if not present -->
 	 <mkdir dir="${build.dir}"/> 
  </target>	
@@ -138,7 +142,7 @@
 	 	<sysproperty key="browse" value="${browse}"/>
 	   	<!--xmlfileset dir="${conf.dir}" includes="tstng.xml"/ -->
 	   	<xmlfileset dir="${smoke.dir}" includes="smoke.xml"/>
-	   	<xmlfileset dir="${regression.dir}" includes="regression.xml"/>
+	   	<!--xmlfileset dir="${regression.dir}" includes="regression.xml"/ -->
 	     <!-- classfileset dir="${build.dir}" includes="example1/*.class"/ -->
  	</testng>
  	

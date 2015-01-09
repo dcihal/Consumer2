@@ -37,7 +37,7 @@ public class QuickPayTransferFutureDate {
    	//Properties p = Utils.loadProperties(".\\conf\\properties.properties");            
 
 
-	@BeforeClass
+	@BeforeClass(alwaysRun = true)
 	@Parameters({"browse", "WebdriverTimeout", "baseurl"})
 	public void launchBrowser(@Optional("CHROME") String browse, String WebdriverTimeout, String baseurl)
 	{
@@ -70,7 +70,7 @@ public class QuickPayTransferFutureDate {
 
 	}
 				
-	/*@BeforeClass
+	/*@BeforeClass(alwaysRun = true)
 	@Parameters({"testRailUrl", "testRailUserName", "testRailPassWord"})
 	public void initTestRails(String testRailUrl, String testRailUserName, String testRailPassWord)
 	{	
@@ -104,7 +104,7 @@ public class QuickPayTransferFutureDate {
 		   Utils.isTextPresent(driver, "Success");
 	  } 
 
-  /*@AfterMethod
+  /*@AfterMethod(alwaysRun = true)
   public void updateTestRails(ITestResult result) 
   {
      if (result.getStatus() == ITestResult.SUCCESS) {
@@ -126,7 +126,7 @@ public class QuickPayTransferFutureDate {
      }
   }*/  
      
-  @AfterMethod
+  @AfterMethod(alwaysRun = true)
   public void takeScreenShotOnFailure(ITestResult testResult) throws IOException 
   {
 	  
@@ -141,7 +141,7 @@ public class QuickPayTransferFutureDate {
   
 
    
-  @AfterClass
+  @AfterClass(alwaysRun = true)
   public void terminateBrowser()
   {
 	  driver.quit();

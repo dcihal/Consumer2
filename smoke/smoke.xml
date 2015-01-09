@@ -14,6 +14,8 @@
 				<include name='smoke'/>
 			</run>
 		</groups>
-		<classes>
-			<class name="com.d3.endToEnd.D3AutomationDemo"></class></classes></test>
+		<packages>
+			<package name="com.d3.accounts"></package>
+			<package name="com.d3.dashboard"></package>
+			<package name="com.d3.messages"></package></packages></test>
 </suite>

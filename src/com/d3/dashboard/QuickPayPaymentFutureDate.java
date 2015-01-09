@@ -39,7 +39,7 @@ public class QuickPayPaymentFutureDate {
    	//Properties p = Utils.loadProperties(".\\conf\\properties.properties");            
 
 
-	@BeforeClass
+	@BeforeClass(alwaysRun = true)
 	@Parameters({"browse", "WebdriverTimeout", "baseurl"})
 	public void launchBrowser(@Optional("CHROME") String browse, String WebdriverTimeout, String baseurl)
 	{
@@ -71,7 +71,7 @@ public class QuickPayPaymentFutureDate {
 
 	}
 				
-/*	@BeforeClass
+/*	@BeforeClass(alwaysRun = true)
 	@Parameters({"testRailUrl", "testRailUserName", "testRailPassWord"})
 	public void initTestRails(String testRailUrl, String testRailUserName, String testRailPassWord)
 	{	
@@ -106,7 +106,7 @@ public class QuickPayPaymentFutureDate {
 		   Utils.isTextPresent(driver, "The payment was not scheduled. Please try again.");
 	  } 
 
-  /*@AfterMethod
+  /*@AfterMethod(alwaysRun = true)
   public void updateTestRails(ITestResult result) 
   {
      if (result.getStatus() == ITestResult.SUCCESS) {
@@ -128,7 +128,7 @@ public class QuickPayPaymentFutureDate {
      }
   }*/  
      
-  @AfterMethod
+  @AfterMethod(alwaysRun = true)
   public void takeScreenShotOnFailure(ITestResult testResult) throws IOException 
   {
 	  
@@ -143,7 +143,7 @@ public class QuickPayPaymentFutureDate {
   
 
    
-  @AfterClass
+  @AfterClass(alwaysRun = true)
   public void terminateBrowser()
   {
 	  driver.quit();

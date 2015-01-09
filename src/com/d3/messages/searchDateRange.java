@@ -37,7 +37,7 @@ public class searchDateRange {
    	//Properties p = Utils.loadProperties(".\\conf\\properties.properties");            
 
 
-	@BeforeClass
+	@BeforeClass(alwaysRun = true)
 	@Parameters({"browse", "WebdriverTimeout", "baseurl"})
 	public void launchBrowser(@Optional("FIREFOX") String browse, String WebdriverTimeout, String baseurl)
 	{
@@ -69,7 +69,7 @@ public class searchDateRange {
 
 	}
 				
-/*	@BeforeClass
+/*	@BeforeClass(alwaysRun = true)
 	@Parameters({"testRailUrl", "testRailUserName", "testRailPassWord"})
 	public void initTestRails(String testRailUrl, String testRailUserName, String testRailPassWord)
 	{	
@@ -97,7 +97,7 @@ public class searchDateRange {
 		   Utils.isTextPresent(driver, "Start Date: 12/31/2013");
 	  } 
 
-/*  @AfterMethod
+/*  @AfterMethod(alwaysRun = true)
   public void updateTestRails(ITestResult result) 
   {
      if (result.getStatus() == ITestResult.SUCCESS) {
@@ -119,7 +119,7 @@ public class searchDateRange {
      }
   }*/  
      
-  @AfterMethod
+  @AfterMethod(alwaysRun = true)
   public void takeScreenShotOnFailure(ITestResult testResult) throws IOException 
   {
 	  
@@ -134,7 +134,7 @@ public class searchDateRange {
   
 
    
-  @AfterClass
+  @AfterClass(alwaysRun = true)
   public void terminateBrowser()
   {
 	  driver.quit();

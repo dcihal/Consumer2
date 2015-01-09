@@ -37,7 +37,7 @@ public class searchMessageContent {
    	//Properties p = Utils.loadProperties(".\\conf\\properties.properties");            
 
 
-	@BeforeClass
+	@BeforeClass(alwaysRun = true)
 	@Parameters({"browse", "WebdriverTimeout", "baseurl"})
 	public void launchBrowser(@Optional("FIREFOX") String browse, String WebdriverTimeout, String baseurl)
 	{
@@ -69,7 +69,7 @@ public class searchMessageContent {
 
 	}
 				
-/*	@BeforeClass
+/*	@BeforeClass(alwaysRun = true)
 	@Parameters({"testRailUrl", "testRailUserName", "testRailPassWord"})
 	public void initTestRails(String testRailUrl, String testRailUserName, String testRailPassWord)
 	{	
@@ -94,7 +94,7 @@ public class searchMessageContent {
 		   Utils.isTextNotPresent(driver, "Successful Transfer Alert from your bank");
 	  } 
 
-/*  @AfterMethod
+/*  @AfterMethod(alwaysRun = true)
   public void updateTestRails(ITestResult result) 
   {
      if (result.getStatus() == ITestResult.SUCCESS) {
@@ -116,7 +116,7 @@ public class searchMessageContent {
      }
   }*/  
      
-  @AfterMethod
+  @AfterMethod(alwaysRun = true)
   public void takeScreenShotOnFailure(ITestResult testResult) throws IOException 
   {
 	  
@@ -131,7 +131,7 @@ public class searchMessageContent {
   
 
    
-  @AfterClass
+  @AfterClass(alwaysRun = true)
   public void terminateBrowser()
   {
 	  driver.quit();

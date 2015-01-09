@@ -40,7 +40,7 @@ package com.d3.accounts;
 	   	//Properties p = Utils.loadProperties(".\\conf\\properties.properties");            
 
 
-		@BeforeClass
+		@BeforeClass(alwaysRun = true)
 		@Parameters({"browse", "WebdriverTimeout", "baseurl"})
 		public void launchBrowser(@Optional("FIREFOX") String browse, String WebdriverTimeout, String baseurl)
 		{
@@ -72,7 +72,7 @@ package com.d3.accounts;
 
 		}
 					
-	/*	@BeforeClass
+	/*	@BeforeClass(alwaysRun = true)
 		@Parameters({"testRailUrl", "testRailUserName", "testRailPassWord"})
 		public void initTestRails(String testRailUrl, String testRailUserName, String testRailPassWord)
 		{	
@@ -99,7 +99,7 @@ package com.d3.accounts;
 			   Utils.isTextPresent(driver, "EXCLUDED");
 		  } 
 
-	/*  @AfterMethod
+	/*  @AfterMethod(alwaysRun = true)
 	  public void updateTestRails(ITestResult result) 
 	  {
 	     if (result.getStatus() == ITestResult.SUCCESS) {
@@ -121,7 +121,7 @@ package com.d3.accounts;
 	     }
 	  }*/  
 	     
-	  @AfterMethod
+	  @AfterMethod(alwaysRun = true)
 	  public void takeScreenShotOnFailure(ITestResult testResult) throws IOException 
 	  {
 		  
@@ -136,7 +136,7 @@ package com.d3.accounts;
 	  
 
 	   
-	  @AfterClass
+	  @AfterClass(alwaysRun = true)
 	  public void terminateBrowser()
 	  {
 		  driver.quit();
