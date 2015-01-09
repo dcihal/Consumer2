@@ -22,7 +22,7 @@ package com.d3.accounts;
 	import com.d3.utils.Utils.BrowserType;
 	//import com.gurock.testrail.APIException;
 
-	public class assetOrderChecks {
+	public class assetIncludeAmount {
 		
 		public WebDriver driver;
 		private BrowserType browser;
@@ -82,7 +82,7 @@ package com.d3.accounts;
 		
 		  @Test(priority = 17, groups = {"smoke", "regression"})
 		  @Parameters({"userName", "passWord", "secretQuestion"})
-		  public void verifyAssetOrderChecks(String userName, String passWord, String secretQuestion) 
+		  public void verifyAssetIncludeAmount(String userName, String passWord, String secretQuestion) 
 		  {
 			   TestCase = "333";
 			   LoginActions.loginUn(driver, userName);
@@ -140,4 +140,5 @@ package com.d3.accounts;
 	  }
 	  
 }
+
 
