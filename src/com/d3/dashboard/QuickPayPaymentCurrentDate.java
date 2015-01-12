@@ -19,23 +19,21 @@ import org.testng.annotations.Test;
 
 import com.d3.dashboard.dashboardActions;
 import com.d3.login.loginActions;
+import com.d3.testrails.D3TestRails;
 import com.d3.utils.Utils;
 import com.d3.utils.Utils.BrowserType;
-//import com.gurock.testrail.APIException;
+import com.gurock.testrail.APIException;
 
 public class QuickPayPaymentCurrentDate {
 	
 	public WebDriver driver;
 	private BrowserType browser;
 	String TestCase; 
-	String TestRun = "16"; 
+	String TestRun = "1"; 
 		
 	loginActions LoginActions = new loginActions();
 	dashboardActions DashboardActions = new dashboardActions();
-
-	
-	
-	//D3TestRails d3testrails = new D3TestRails();
+	D3TestRails d3testrails = new D3TestRails();
 	Utils utils = new Utils();
 
    	//Properties p = Utils.loadProperties(".\\conf\\properties.properties");            
@@ -73,19 +71,19 @@ public class QuickPayPaymentCurrentDate {
 
 	}
 				
-/*	@BeforeClass(alwaysRun = true)
+	@BeforeClass(alwaysRun = true)
 	@Parameters({"testRailUrl", "testRailUserName", "testRailPassWord"})
 	public void initTestRails(String testRailUrl, String testRailUserName, String testRailPassWord)
 	{	
 		d3testrails.InitRail(testRailUrl, testRailUserName, testRailPassWord);
-	}*/
+	}
 	
 	
-	  @Test(priority = 17, groups = {"smoke", "regression"})
+	  @Test(priority = 2, groups = {"smoke", "regression"})
 	  @Parameters({"userName", "passWord", "secretQuestion"})
 	  public void verifyQuickPayPaaymentCurrentDate(String userName, String passWord, String secretQuestion) 
 	  {
-		   TestCase = "333";
+		   TestCase = "2";
 		   LoginActions.loginUn(driver, userName);
 		   LoginActions.loginPw(driver, passWord);
 		   LoginActions.submit(driver);
@@ -107,7 +105,7 @@ public class QuickPayPaymentCurrentDate {
 		   Utils.isTextPresent(driver, "The payment was not scheduled. Please try again.");
 	  } 
 
-/*  @AfterMethod(alwaysRun = true)
+  @AfterMethod(alwaysRun = true)
   public void updateTestRails(ITestResult result) 
   {
      if (result.getStatus() == ITestResult.SUCCESS) {
@@ -127,7 +125,7 @@ public class QuickPayPaymentCurrentDate {
  		}
         //System.out.print("Failed TestRun [" + TestRun + "] TestCase[" + TestCase + "]\n");
      }
-  }*/  
+  }  
      
   @AfterMethod(alwaysRun = true)
   public void takeScreenShotOnFailure(ITestResult testResult) throws IOException 

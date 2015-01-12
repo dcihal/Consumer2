@@ -1,40 +1,38 @@
 package com.d3.accounts;
 
-	import java.io.File;
-	import java.io.IOException;
-	import java.sql.Date;
+import java.io.File;
+import java.io.IOException;
+import java.sql.Date;
 
-	import org.apache.commons.io.FileUtils;
-	import org.openqa.selenium.OutputType;
-	import org.openqa.selenium.TakesScreenshot;
-	import org.openqa.selenium.WebDriver;
-	import org.testng.ITestResult;
-	import org.testng.annotations.AfterClass;
-	import org.testng.annotations.AfterMethod;
-	import org.testng.annotations.BeforeClass;
-	import org.testng.annotations.Optional;
-	import org.testng.annotations.Parameters;
-	import org.testng.annotations.Test;
+import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
+import org.openqa.selenium.WebDriver;
+import org.testng.ITestResult;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Optional;
+import org.testng.annotations.Parameters;
+import org.testng.annotations.Test;
 
-	import com.d3.login.loginActions;
-	import com.d3.accounts.accountsActions;
-	import com.d3.utils.Utils;
-	import com.d3.utils.Utils.BrowserType;
-	//import com.gurock.testrail.APIException;
+import com.d3.login.loginActions;
+import com.d3.accounts.accountsActions;
+import com.d3.testrails.D3TestRails;
+import com.d3.utils.Utils;
+import com.d3.utils.Utils.BrowserType;
+import com.gurock.testrail.APIException;
 
 	public class otherAccountsAddOnline {
 		
 		public WebDriver driver;
 		private BrowserType browser;
 		String TestCase; 
-		String TestRun = "16"; 
+		String TestRun = "1"; 
 			
 		loginActions LoginActions = new loginActions();
 		accountsActions AccountsActions = new accountsActions();
-
-		
-		
-		//D3TestRails d3testrails = new D3TestRails();
+		D3TestRails d3testrails = new D3TestRails();
 		Utils utils = new Utils();
 
 	   	//Properties p = Utils.loadProperties(".\\conf\\properties.properties");            
@@ -72,19 +70,19 @@ package com.d3.accounts;
 
 		}
 					
-	/*	@BeforeClass(alwaysRun = true)
+		@BeforeClass(alwaysRun = true)
 		@Parameters({"testRailUrl", "testRailUserName", "testRailPassWord"})
 		public void initTestRails(String testRailUrl, String testRailUserName, String testRailPassWord)
 		{	
 			d3testrails.InitRail(testRailUrl, testRailUserName, testRailPassWord);
-		}*/
+		}
 		
 		
-		  @Test(priority = 17, groups = {"smoke", "regression"})
+		  @Test(priority = 24, groups = {"smoke", "regression"})
 		  @Parameters({"userName", "passWord", "secretQuestion"})
 		  public void verifyOtherAccountsAddOnline(String userName, String passWord, String secretQuestion) 
 		  {
-			   TestCase = "333";
+			   TestCase = "24";
 			   LoginActions.loginUn(driver, userName);
 			   LoginActions.loginPw(driver, passWord);
 			   LoginActions.submit(driver);
@@ -96,7 +94,7 @@ package com.d3.accounts;
 			   Utils.isTextPresent(driver, "The payment was not scheduled. Please try again.");
 		  } 
 
-	/*  @AfterMethod(alwaysRun = true)
+	  @AfterMethod(alwaysRun = true)
 	  public void updateTestRails(ITestResult result) 
 	  {
 	     if (result.getStatus() == ITestResult.SUCCESS) {
@@ -116,7 +114,7 @@ package com.d3.accounts;
 	 		}
 	        //System.out.print("Failed TestRun [" + TestRun + "] TestCase[" + TestCase + "]\n");
 	     }
-	  }*/  
+	  }  
 	     
 	  @AfterMethod(alwaysRun = true)
 	  public void takeScreenShotOnFailure(ITestResult testResult) throws IOException 

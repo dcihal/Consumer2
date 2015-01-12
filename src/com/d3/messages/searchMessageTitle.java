@@ -18,10 +18,10 @@ import org.testng.annotations.Test;
 
 import com.d3.login.loginActions;
 import com.d3.messages.messagesActions;
-//import com.d3.testrails.D3TestRails;
+import com.d3.testrails.D3TestRails;
 import com.d3.utils.Utils;
 import com.d3.utils.Utils.BrowserType;
-//import com.gurock.testrail.APIException;
+import com.gurock.testrail.APIException;
 
 public class searchMessageTitle {
 
@@ -29,10 +29,10 @@ public class searchMessageTitle {
 	public WebDriver driver;
 	private BrowserType browser;
 	String TestCase; 
-	String TestRun = "16"; 
+	String TestRun = "1"; 
 	loginActions LoginActions = new loginActions();
 	messagesActions MessagesActions = new messagesActions();
-	//D3TestRails d3testrails = new D3TestRails();
+	D3TestRails d3testrails = new D3TestRails();
 	Utils utils = new Utils();
 
    	//Properties p = Utils.loadProperties(".\\conf\\properties.properties");            
@@ -70,19 +70,19 @@ public class searchMessageTitle {
 
 	}
 				
-/*	@BeforeClass(alwaysRun = true)
+	@BeforeClass(alwaysRun = true)
 	@Parameters({"testRailUrl", "testRailUserName", "testRailPassWord"})
 	public void initTestRails(String testRailUrl, String testRailUserName, String testRailPassWord)
 	{	
 		d3testrails.InitRail(testRailUrl, testRailUserName, testRailPassWord);
-	}*/
+	}
 	
 	
-	  @Test(priority = 17, groups = {"smoke", "regression"})
+	  @Test(priority = 9, groups = {"smoke", "regression"})
 	  @Parameters({"userName", "passWord", "secretQuestion"})
 	  public void verifySearchMessageTitle(String userName, String passWord, String secretQuestion) throws InterruptedException 
 	  {
-		   TestCase = "333";
+		   TestCase = "9";
 		   LoginActions.loginUn(driver, userName);
 		   LoginActions.loginPw(driver, passWord);
 		   LoginActions.submit(driver);
@@ -96,7 +96,7 @@ public class searchMessageTitle {
 		   //  FAILING AND DON'T KNOW WHY... SHOULD BE ABLE TO SEARCH THE MESSAGE TITLE
 	  } 
 
-/*  @AfterMethod(alwaysRun = true)
+  @AfterMethod(alwaysRun = true)
   public void updateTestRails(ITestResult result) 
   {
      if (result.getStatus() == ITestResult.SUCCESS) {
@@ -116,7 +116,7 @@ public class searchMessageTitle {
  		}
         //System.out.print("Failed TestRun [" + TestRun + "] TestCase[" + TestCase + "]\n");
      }
-  }*/  
+  }  
      
   @AfterMethod(alwaysRun = true)
   public void takeScreenShotOnFailure(ITestResult testResult) throws IOException 
