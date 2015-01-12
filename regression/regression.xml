@@ -2,8 +2,8 @@
 		name="WebdriverTimeout" value="30">
 </parameter>
 	<parameter name="baseurl" value="https://fi1-qa4.dev.d3banking.com/"></parameter>
-	<parameter name="testRailUrl" value="https://lodo.testrail.com/"></parameter>
-	<parameter name="testRailUserName" value="dcihal@d3banking.com"></parameter>
+	<parameter name="testRailUrl" value="https://d3banking.testrail.com/"></parameter>
+	<parameter name="testRailUserName" value="qaadmin@d3banking.com"></parameter>
 	<parameter name="testRailPassWord" value="D3B@nk!ng"></parameter>
 	<parameter name="userName" value="samueladamsiii"></parameter>
 	<parameter name="passWord" value="password"></parameter>
