@@ -82,7 +82,7 @@ public class searchMessageTitle {
 	  @Parameters({"userName", "passWord", "secretQuestion"})
 	  public void verifySearchMessageTitle(String userName, String passWord, String secretQuestion) throws InterruptedException 
 	  {
-		   TestCase = "9";
+		   TestCase = "109";
 		   LoginActions.loginUn(driver, userName);
 		   LoginActions.loginPw(driver, passWord);
 		   LoginActions.submit(driver);

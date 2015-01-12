@@ -82,7 +82,7 @@ public class searchMessageType {
 	  @Parameters({"userName", "passWord", "secretQuestion"})
 	  public void verifySearchMessageType(String userName, String passWord, String secretQuestion) 
 	  {
-		   TestCase = "9";
+		   TestCase = "108";
 		   LoginActions.loginUn(driver, userName);
 		   LoginActions.loginPw(driver, passWord);
 		   LoginActions.submit(driver);

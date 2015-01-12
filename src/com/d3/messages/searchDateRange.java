@@ -81,7 +81,7 @@ public class searchDateRange {
 	  @Parameters({"userName", "passWord", "secretQuestion"})
 	  public void verifySearchDateRange(String userName, String passWord, String secretQuestion) 
 	  {
-		   TestCase = "9";
+		   TestCase = "107";
 		   LoginActions.loginUn(driver, userName);
 		   LoginActions.loginPw(driver, passWord);
 		   LoginActions.submit(driver);
