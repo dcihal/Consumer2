@@ -29,5 +29,72 @@ public class transactionsActions {
 	    wait.until(ExpectedConditions.visibilityOf(Mapping.Transactions));	
 	    Mapping.Transactions.click(); 
 	}
+
+    public void clickFirstTransaction(WebDriver driver)
+    {
+	    wait.until(ExpectedConditions.visibilityOf(Mapping.FirstTransaction));	
+	    Mapping.FirstTransaction.click(); 
+	}
+    
+    public void clickTransactionCategory(WebDriver driver)
+    {
+	    wait.until(ExpectedConditions.visibilityOf(Mapping.ClickTransactionCategory));	
+	    Mapping.ClickTransactionCategory.click(); 
+	}
+    
+    public void addNewCategoryButton(WebDriver driver)
+    {
+	    wait.until(ExpectedConditions.visibilityOf(Mapping.AddNewCategoryButton));	
+	    Mapping.AddNewCategoryButton.click(); 
+	}
+    
+    public void addCategoryName(WebDriver driver, String username)
+    {
+    	wait.until(ExpectedConditions.visibilityOf(Mapping.AddCategoryName));
+    	Mapping.AddCategoryName.sendKeys(username);
+    }
+    
+    public void clickSubcategoryButton(WebDriver driver)
+    {
+	    wait.until(ExpectedConditions.visibilityOf(Mapping.ClickSubcategoryButton));	
+	    Mapping.ClickSubcategoryButton.click(); 
+	}
+    
+    public void clickSelectParentDropdown(WebDriver driver)
+    {
+	    wait.until(ExpectedConditions.visibilityOf(Mapping.ClickSelectParentDropdown));	
+	    Mapping.ClickSelectParentDropdown.click(); 
+	}
+    
+    public void clickCategoryName(WebDriver driver)
+    {
+    	wait.until(ExpectedConditions.visibilityOf(Mapping.ClickCategoryName));
+    	Mapping.ClickCategoryName.click(); 
+    }
+    
+    public void clickCategorySubmitButton(WebDriver driver)
+    {
+    	wait.until(ExpectedConditions.visibilityOf(Mapping.CategorySubmitButton));
+    	Mapping.CategorySubmitButton.click(); 
+    }
+    
+    public void clickCategoryPlusIcon(WebDriver driver)
+    {
+    	wait.until(ExpectedConditions.visibilityOf(Mapping.ClickCategoryPlusIcon));
+    	Mapping.ClickCategoryPlusIcon.click(); 
+    }
+        
+    public void clickNewSubcategory(WebDriver driver)
+    {
+    	wait.until(ExpectedConditions.visibilityOf(Mapping.ClickNewSubcategory));
+    	Mapping.ClickNewSubcategory.click(); 
+    }
+    
+    public void clickViewSimilarButton(WebDriver driver)
+    {
+    	wait.until(ExpectedConditions.visibilityOf(Mapping.ClickViewSimilarButton));
+    	Mapping.ClickViewSimilarButton.click(); 
+    }
+    
     
 }

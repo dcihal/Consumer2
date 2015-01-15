@@ -92,7 +92,17 @@ import com.gurock.testrail.APIException;
 			   LoginActions.privateDevice(driver);
 			   LoginActions.submit(driver);
 			   TransactionsActions.transactionsButton(driver);
-			   Utils.isTextPresent(driver, "The payment was not scheduled. Please try again.");
+			   TransactionsActions.clickFirstTransaction(driver);
+			   TransactionsActions.clickTransactionCategory(driver);
+			   TransactionsActions.addCategoryName(driver, "New Auto Test Cat Name");
+			   TransactionsActions.clickSubcategoryButton(driver);
+			   TransactionsActions.clickSelectParentDropdown(driver);
+			   TransactionsActions.clickCategoryName(driver);	
+			   TransactionsActions.clickCategorySubmitButton(driver);
+			   TransactionsActions.clickCategoryPlusIcon(driver);
+			   TransactionsActions.clickNewSubcategory(driver);
+			   TransactionsActions.clickViewSimilarButton(driver);
+			   Utils.isTextPresent(driver, "transaction(s) were found that could be recategorized.");
 		  } 
 
 	  @AfterMethod(alwaysRun = true)
@@ -139,4 +149,3 @@ import com.gurock.testrail.APIException;
 	  }
 	  
 }
-
