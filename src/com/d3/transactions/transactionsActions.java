@@ -45,7 +45,7 @@ public class transactionsActions {
     public void addNewCategoryButton(WebDriver driver)
     {
 	    wait.until(ExpectedConditions.visibilityOf(Mapping.AddNewCategoryButton));	
-	    Mapping.AddNewCategoryButton.click(); 
+	    Mapping.AddNewCategoryButton.click();
 	}
     
     public void addCategoryName(WebDriver driver, String username)

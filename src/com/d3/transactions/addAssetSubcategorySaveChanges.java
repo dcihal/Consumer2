@@ -94,6 +94,7 @@ import com.gurock.testrail.APIException;
 			   TransactionsActions.transactionsButton(driver);
 			   TransactionsActions.clickFirstTransaction(driver);
 			   TransactionsActions.clickTransactionCategory(driver);
+			   TransactionsActions.addNewCategoryButton(driver);
 			   TransactionsActions.addCategoryName(driver, "New Auto Test Cat Name");
 			   TransactionsActions.clickSubcategoryButton(driver);
 			   TransactionsActions.clickSelectParentDropdown(driver);

@@ -25,12 +25,12 @@ public class transactionsMapping {
     @FindBy(how = How.NAME, using = "categoryName")
     
     public WebElement ClickTransactionCategory;
-    
+
     @FindBy(how = How.CSS, using = "button.btn.add-category.pull-right")
     
     public WebElement AddNewCategoryButton;
-        
-    @FindBy(how = How.CLASS_NAME, using = "span12 field name")
+    
+    @FindBy(how = How.CSS, using = "input.span12.field.name")
     
     public WebElement AddCategoryName;
     
@@ -54,15 +54,14 @@ public class transactionsMapping {
     
     public WebElement ClickCategoryPlusIcon;
         
-    @FindBy(how = How.XPATH, using = "  //*[@id='main']/section/div[2]/ul/li[1]/div[2]/div[2]/div/div/div[1]/ul/li[1]/ul/li/span[2]")
+    @FindBy(how = How.XPATH, using = "//*[@id='main']/section/div[2]/ul/li[1]/div[2]/div[2]/div/div/div[1]/ul/li[1]/ul/li/span[2]")
     
     public WebElement ClickNewSubcategory;
     
     @FindBy(how = How.CLASS_NAME, using = "btn viewSimilar")
     
     public WebElement ClickViewSimilarButton;
-    
-           
+             
     	
 }
 
