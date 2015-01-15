@@ -17,5 +17,6 @@
 		<packages>
 			<package name="com.d3.accounts"></package>
 			<package name="com.d3.dashboard"></package>
-			<package name="com.d3.messages"></package></packages></test>
+			<package name="com.d3.messages"></package>
+			<package name="com.d3.transactions"></package></packages></test>
 </suite>
