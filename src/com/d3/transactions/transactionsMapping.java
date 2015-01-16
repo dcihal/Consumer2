@@ -34,7 +34,7 @@ public class transactionsMapping {
     
     public WebElement AddCategoryName;
     
-    @FindBy(how = How.CLASS_NAME, using = "field parent-category-cb")
+    @FindBy(how = How.CSS, using = "input.field.parent-category-cb")
     
     public WebElement ClickSubcategoryButton;
     
@@ -46,7 +46,7 @@ public class transactionsMapping {
     
     public WebElement ClickCategoryName;
     
-    @FindBy(how = How.CLASS_NAME, using = "btn create-category")
+    @FindBy(how = How.CSS, using = "button.btn.create-category")
     
     public WebElement CategorySubmitButton;
     
@@ -58,7 +58,7 @@ public class transactionsMapping {
     
     public WebElement ClickNewSubcategory;
     
-    @FindBy(how = How.CLASS_NAME, using = "btn viewSimilar")
+    @FindBy(how = How.CSS, using = "button.btn.viewSimilar")
     
     public WebElement ClickViewSimilarButton;
              
