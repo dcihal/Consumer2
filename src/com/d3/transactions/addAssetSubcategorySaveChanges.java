@@ -95,6 +95,7 @@ import com.gurock.testrail.APIException;
 			   TransactionsActions.clickFirstTransaction(driver);
 			   TransactionsActions.clickTransactionCategory(driver);
 			   TransactionsActions.addNewCategoryButton(driver);
+			   // CAN'T ADD NEW SUBCATEGORY IF NAME ALREADY EXISTS.  CURRENTLY NO ERROR MESSAGING TO INDICATE THAT
 			   TransactionsActions.addCategoryName(driver, "New Auto Test Cat Name");
 			   TransactionsActions.clickSubcategoryButton(driver);
 			   TransactionsActions.clickSelectParentDropdown(driver);

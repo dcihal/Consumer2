@@ -95,6 +95,25 @@ public class transactionsActions {
     	wait.until(ExpectedConditions.visibilityOf(Mapping.ClickViewSimilarButton));
     	Mapping.ClickViewSimilarButton.click(); 
     }
+
+    public void clickIgnoreButton(WebDriver driver)
+    {
+    	wait.until(ExpectedConditions.visibilityOf(Mapping.ClickIgnoreButton));
+    	Mapping.ClickIgnoreButton.click(); 
+    }
+    
+    public void transactionsSearch(WebDriver driver, String search)
+    {
+    	wait.until(ExpectedConditions.visibilityOf(Mapping.TransactionsSearch));
+    	Mapping.TransactionsSearch.sendKeys(search);
+    }
+    
+    public void transactionsSearchSubmit(WebDriver driver)
+    {
+    	wait.until(ExpectedConditions.visibilityOf(Mapping.TransactionsSearchSubmit));
+    	Mapping.TransactionsSearchSubmit.click(); 
+    }
+    
     
     
 }

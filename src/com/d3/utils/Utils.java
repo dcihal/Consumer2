@@ -70,7 +70,7 @@ public final class Utils  {
     
 
     public static void isTextNotPresent(WebDriver driver, String what) { 
-    	Utils.sleep(10000);
+    	Utils.sleep(1000);
     	List<WebElement> list = driver.findElements(By.xpath("//*[contains(text(),'" + what + "')]")); 
         assert (list.size() == 0);
     }

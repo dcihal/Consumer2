@@ -61,6 +61,18 @@ public class transactionsMapping {
     @FindBy(how = How.CSS, using = "button.btn.viewSimilar")
     
     public WebElement ClickViewSimilarButton;
+    
+    @FindBy(how = How.CSS, using = "button.btn.closeSimilar")
+    
+    public WebElement ClickIgnoreButton;
+    
+    @FindBy(how = How.NAME, using = "searchTerm")
+    
+    public WebElement TransactionsSearch;
+    
+    @FindBy(how = How.CLASS_NAME, using = "icon-search")
+    
+    public WebElement TransactionsSearchSubmit;   
              
     	
 }

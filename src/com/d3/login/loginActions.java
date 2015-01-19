@@ -8,6 +8,8 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.openqa.selenium.Keys;
 
+import com.d3.utils.Utils;
+
 public class loginActions {
 	
 	public WebDriver Driver;
@@ -52,6 +54,7 @@ public class loginActions {
     {
     	wait.until(ExpectedConditions.visibilityOf(mapping.UserName));
     	mapping.UserName.sendKeys(username);
+    	Utils.sleep(500);
     }
     
     public void loginPw(WebDriver driver, String password)

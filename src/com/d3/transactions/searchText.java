@@ -92,18 +92,12 @@ import com.gurock.testrail.APIException;
 			   LoginActions.privateDevice(driver);
 			   LoginActions.submit(driver);
 			   TransactionsActions.transactionsButton(driver);
-			   TransactionsActions.clickFirstTransaction(driver);
-			   TransactionsActions.clickTransactionCategory(driver);
-			   TransactionsActions.addNewCategoryButton(driver);
-			   TransactionsActions.addCategoryName(driver, "New Auto Test Cat Name");
-			   TransactionsActions.clickSubcategoryButton(driver);
-			   TransactionsActions.clickSelectParentDropdown(driver);
-			   TransactionsActions.clickCategoryName(driver);	
-			   TransactionsActions.clickCategorySubmitButton(driver);
-			   TransactionsActions.clickCategoryPlusIcon(driver);
-			   TransactionsActions.clickNewSubcategory(driver);
-			   TransactionsActions.clickViewSimilarButton(driver);
-			   Utils.isTextPresent(driver, "transaction(s) were found that could be recategorized.");
+			   TransactionsActions.transactionsSearch(driver, "walmart");
+			   TransactionsActions.transactionsSearchSubmit(driver);
+			   Utils.isTextPresent(driver, "Term: walmart");
+			   Utils.isTextNotPresent(driver, "sprouts");
+			   Utils.isTextNotPresent(driver, "amazon");
+			   Utils.isTextNotPresent(driver, "best buy");
 		  } 
 
 	  @AfterMethod(alwaysRun = true)
