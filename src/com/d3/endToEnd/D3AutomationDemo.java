@@ -8,10 +8,10 @@ import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.*;
 import org.testng.annotations.*;
 import org.testng.ITestResult;
+
 import com.d3.testrails.D3TestRails;
 import com.d3.utils.*;
 import com.d3.utils.Utils.BrowserType;
-
 import com.d3.login.loginActions;
 import com.d3.accounts.accountsActions;
 import com.d3.help.helpActions;
@@ -62,6 +62,9 @@ public class D3AutomationDemo {
             case "CHROME":
             	browser = Utils.BrowserType.CHROME;
             	break;
+            case "ANDROID":
+            	browser = Utils.BrowserType.ANDROID;
+            	break;
             default:
             	browser = Utils.BrowserType.FIREFOX;
             	break;
@@ -107,7 +110,9 @@ public class D3AutomationDemo {
 	   TestCase = "1";
 	   LoginActions.loginUn(driver, userName);
 	   LoginActions.loginPw(driver, "xxxxxx");
-	   LoginActions.submit(driver);
+       WebElement submit =  driver.findElement(By.cssSelector("button.btn.btn-submit"));
+       submit.submit();
+	   //LoginActions.submit(driver);
 	   //WebDriverWait wait = new WebDriverWait(driver, 10);
 	   //wait.until(ExpectedConditions.textToBePresentInElementLocated(By.xpath("//div[@class='user-alert']"), "Invalid User Credentials"));
 	   Utils.isTextPresent(driver, "Invalid");
@@ -123,7 +128,9 @@ public class D3AutomationDemo {
 	   driver.findElement(By.name("password")).clear();
 	   LoginActions.loginUn(driver, userName);
 	   LoginActions.loginPw(driver, passWord);
-	   LoginActions.submit(driver);
+       WebElement submit =  driver.findElement(By.cssSelector("button.btn.btn-submit"));
+       submit.submit();
+	   //LoginActions.submit(driver);
   }
   
   @Test(priority = 4, groups = {"smoke", "regression"})
@@ -133,7 +140,9 @@ public class D3AutomationDemo {
 	   TestCase = "13";
 	   LoginActions.secretQuestion(driver, secretQuestion);
 	   LoginActions.privateDevice(driver);
-	   LoginActions.submit(driver);
+       WebElement submit =  driver.findElement(By.cssSelector("button.btn.btn-submit"));
+       submit.submit();
+	   //LoginActions.submit(driver);
 	   Utils.isTextPresent(driver, "Last Login:");
 	   Utils.isTextPresent(driver, "Logout");	   
 	   Utils.isTextPresent(driver, "Samuel Adams III");

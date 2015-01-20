@@ -1,4 +1,10 @@
 package com.d3.utils;
+import io.selendroid.client.SelendroidDriver;
+import io.selendroid.common.SelendroidCapabilities;
+import io.selendroid.common.device.DeviceTargetPlatform;
+import io.selendroid.standalone.SelendroidConfiguration;
+import io.selendroid.standalone.SelendroidLauncher;
+
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
@@ -223,7 +229,9 @@ public final class Utils  {
     
 	public static WebDriver getWebDriver(BrowserType browserType, long timeout) {
 		File file;
-		WebDriver driver;
+		WebDriver driver = null;
+		SelendroidLauncher selendroidServer = null;
+	
 		switch (browserType) {
 	        case FIREFOX:
 	    	    // Create a new instance of the Firefox driver
@@ -252,13 +260,28 @@ public final class Utils  {
 	        	driver.manage().timeouts().implicitlyWait(timeout, TimeUnit.SECONDS);
 	        	driver.manage().window().maximize();
 	            return driver;
+	        case ANDROID:
+	            SelendroidConfiguration config = new SelendroidConfiguration();
+	            selendroidServer = new SelendroidLauncher(config);
+	            selendroidServer.launchSelendroid();
+	            DesiredCapabilities caps = SelendroidCapabilities.android();
+	            caps.setCapability(SelendroidCapabilities.PLATFORM_VERSION, DeviceTargetPlatform.ANDROID19);
+	            caps.setCapability(SelendroidCapabilities.EMULATOR, true);	            
+	            try {
+	            		driver = new SelendroidDriver(caps);
+	            	} catch (Exception e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+	            	}
+	            driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
+	            return driver;
 	        default:
 	            throw new RuntimeException("Browser type unsupported");
 	    }
 	}
 
 	public enum BrowserType {
-	    FIREFOX, IE, CHROME
+	    FIREFOX, IE, CHROME, ANDROID
 	}
 	
 
