@@ -227,19 +227,28 @@ public final class Utils  {
     	return wait.until(ExpectedConditions.titleContains(title));
     }
     
-	public static WebDriver getWebDriver(BrowserType browserType, long timeout) {
+	public enum BrowserType {
+	    FIREFOX, IE, CHROME, ANDROID
+	}
+    
+	public static WebDriver getWebDriver(String browserType, String timeout) {
 		File file;
 		WebDriver driver = null;
 		SelendroidLauncher selendroidServer = null;
-	
-		switch (browserType) {
-	        case FIREFOX:
-	    	    // Create a new instance of the Firefox driver
+		BrowserType browser = null;
+		
+    	Long timeOut = Long.valueOf(timeout);
+		
+		switch (browserType)
+    	{
+    	    case "FIREFOX": 
+    	    	browser = Utils.BrowserType.FIREFOX;
 	        	driver = new FirefoxDriver();
-	        	driver.manage().timeouts().implicitlyWait(timeout, TimeUnit.SECONDS);
+	        	driver.manage().timeouts().implicitlyWait(timeOut, TimeUnit.SECONDS);
 	        	driver.manage().window().maximize();
 	    	    return driver; 
-	        case IE:
+    	    case "IE":
+    	    	browser = Utils.BrowserType.IE;
 	        	DesiredCapabilities capabilities = DesiredCapabilities.internetExplorer();
 	    		capabilities.setCapability("nativeEvents", false);
 	        	capabilities.setCapability("ignoreProtectedModeSettings", true);
@@ -250,17 +259,19 @@ public final class Utils  {
 	        	file = new File(".\\libs\\IEDriverServer.exe");
 	        	System.setProperty("webdriver.ie.driver", file.getAbsolutePath());
 	        	driver = new InternetExplorerDriver(capabilities);
-	        	driver.manage().timeouts().implicitlyWait(timeout, TimeUnit.SECONDS);
+	        	driver.manage().timeouts().implicitlyWait(timeOut, TimeUnit.SECONDS);
 	        	driver.manage().window().maximize();
 	    	    return driver;
-	        case CHROME:
+            case "CHROME":
+            	browser = Utils.BrowserType.CHROME;
 	        	file = new File(".\\libs\\chromedriver.exe");
 	        	System.setProperty("webdriver.chrome.driver", file.getAbsolutePath());
 	        	driver = new ChromeDriver();
-	        	driver.manage().timeouts().implicitlyWait(timeout, TimeUnit.SECONDS);
+	        	driver.manage().timeouts().implicitlyWait(timeOut, TimeUnit.SECONDS);
 	        	driver.manage().window().maximize();
 	            return driver;
-	        case ANDROID:
+            case "ANDROID":
+            	browser = Utils.BrowserType.ANDROID;
 	            SelendroidConfiguration config = new SelendroidConfiguration();
 	            selendroidServer = new SelendroidLauncher(config);
 	            selendroidServer.launchSelendroid();
@@ -273,18 +284,20 @@ public final class Utils  {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
 	            	}
-	            driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
+	            driver.manage().timeouts().implicitlyWait(timeOut, TimeUnit.SECONDS);
 	            return driver;
-	        default:
-	            throw new RuntimeException("Browser type unsupported");
-	    }
+            default:
+            	browser = Utils.BrowserType.CHROME;
+	        	file = new File(".\\libs\\chromedriver.exe");
+	        	System.setProperty("webdriver.chrome.driver", file.getAbsolutePath());
+	        	driver = new ChromeDriver();
+	        	driver.manage().timeouts().implicitlyWait(timeOut, TimeUnit.SECONDS);
+	        	driver.manage().window().maximize();
+	            return driver;
+            	
+    	}
+    	
 	}
 
-	public enum BrowserType {
-	    FIREFOX, IE, CHROME, ANDROID
-	}
-	
-
-    
 }
 

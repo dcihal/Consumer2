@@ -11,7 +11,6 @@ import org.testng.ITestResult;
 
 import com.d3.testrails.D3TestRails;
 import com.d3.utils.*;
-import com.d3.utils.Utils.BrowserType;
 import com.d3.login.loginActions;
 import com.d3.accounts.accountsActions;
 import com.d3.help.helpActions;
@@ -28,7 +27,6 @@ import com.d3.dashboard.dashboardActions;
 public class D3AutomationDemo {
 
 	public WebDriver driver;
-	private BrowserType browser;
 	String TestCase; 
 	String TestRun = "1"; 
 	loginActions LoginActions = new loginActions();
@@ -51,31 +49,8 @@ public class D3AutomationDemo {
 	@Parameters({"browse", "WebdriverTimeout", "baseurl"})
 	public void launchBrowser(@Optional("CHROME") String browse, String WebdriverTimeout, String baseurl)
 	{
-    	switch (browse)
-    	{
-    	    case "FIREFOX": 
-    	    	browser = Utils.BrowserType.FIREFOX;
-            	break;
-    	    case "IE":
-    	    	browser = Utils.BrowserType.IE;
-            	break;
-            case "CHROME":
-            	browser = Utils.BrowserType.CHROME;
-            	break;
-            case "ANDROID":
-            	browser = Utils.BrowserType.ANDROID;
-            	break;
-            default:
-            	browser = Utils.BrowserType.FIREFOX;
-            	break;
-            	
-
-    	}
-    	
-        //String webdriverTimeout = p.getProperty("WebdriverTimeout");
+        driver = Utils.getWebDriver(browse, WebdriverTimeout); 
     	Long timeout = Long.valueOf(WebdriverTimeout);
-        driver = Utils.getWebDriver(browser, timeout); 
-		
 		driver.get(baseurl);
 		LoginActions.init(driver, timeout);
 		AccountsActions.init(driver, timeout);

@@ -21,13 +21,11 @@ import com.d3.dashboard.dashboardActions;
 import com.d3.login.loginActions;
 import com.d3.testrails.D3TestRails;
 import com.d3.utils.Utils;
-import com.d3.utils.Utils.BrowserType;
 import com.gurock.testrail.APIException;
 
 public class QuickPayTransferFutureDate {
 	
 	public WebDriver driver;
-	private BrowserType browser;
 	String TestCase; 
 	String TestRun = "1"; 
 	dashboardActions DashboardActions = new dashboardActions();
@@ -42,28 +40,8 @@ public class QuickPayTransferFutureDate {
 	@Parameters({"browse", "WebdriverTimeout", "baseurl"})
 	public void launchBrowser(@Optional("CHROME") String browse, String WebdriverTimeout, String baseurl)
 	{
-    	switch (browse)
-    	{
-    	    case "FIREFOX": 
-    	    	browser = Utils.BrowserType.FIREFOX;
-            	break;
-    	    case "IE":
-    	    	browser = Utils.BrowserType.IE;
-            	break;
-            case "CHROME":
-            	browser = Utils.BrowserType.CHROME;
-            	break;
-            default:
-            	browser = Utils.BrowserType.FIREFOX;
-            	break;
-            	
-
-    	}
-    	
-        //String webdriverTimeout = p.getProperty("WebdriverTimeout");
+        driver = Utils.getWebDriver(browse, WebdriverTimeout); 
     	Long timeout = Long.valueOf(WebdriverTimeout);
-        driver = Utils.getWebDriver(browser, timeout); 
-		
 		driver.get(baseurl);
 		DashboardActions.init(driver, timeout);
 		LoginActions.init(driver, timeout);

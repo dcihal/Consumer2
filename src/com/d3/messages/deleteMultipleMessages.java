@@ -1,33 +1,30 @@
 package com.d3.messages;
 
-	import java.io.File;
-	import java.io.IOException;
-	import java.sql.Date;
+import java.io.File;
+import java.io.IOException;
+import java.sql.Date;
 
-	import org.apache.commons.io.FileUtils;
-	import org.openqa.selenium.OutputType;
-	import org.openqa.selenium.TakesScreenshot;
-	import org.openqa.selenium.WebDriver;
-	import org.testng.ITestResult;
-	import org.testng.annotations.AfterClass;
-	import org.testng.annotations.AfterMethod;
-	import org.testng.annotations.BeforeClass;
-	import org.testng.annotations.Optional;
-	import org.testng.annotations.Parameters;
-	import org.testng.annotations.Test;
+import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
+import org.openqa.selenium.WebDriver;
+import org.testng.ITestResult;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Optional;
+import org.testng.annotations.Parameters;
+import org.testng.annotations.Test;
 
-	import com.d3.login.loginActions;
-	import com.d3.messages.messagesActions;
-
-	import com.d3.testrails.D3TestRails;
-	import com.d3.utils.Utils;
-	import com.d3.utils.Utils.BrowserType;
-	import com.gurock.testrail.APIException;
+import com.d3.login.loginActions;
+import com.d3.messages.messagesActions;
+import com.d3.testrails.D3TestRails;
+import com.d3.utils.Utils;
+import com.gurock.testrail.APIException;
 
 	public class deleteMultipleMessages {
 		
 		public WebDriver driver;
-		private BrowserType browser;
 		String TestCase; 
 		String TestRun = "1"; 
 		loginActions LoginActions = new loginActions();
@@ -40,30 +37,10 @@ package com.d3.messages;
 
 		@BeforeClass(alwaysRun = true)
 		@Parameters({"browse", "WebdriverTimeout", "baseurl"})
-		public void launchBrowser(@Optional("FIREFOX") String browse, String WebdriverTimeout, String baseurl)
+		public void launchBrowser(@Optional("CHROME") String browse, String WebdriverTimeout, String baseurl)
 		{
-	    	switch (browse)
-	    	{
-	    	    case "FIREFOX": 
-	    	    	browser = Utils.BrowserType.FIREFOX;
-	            	break;
-	    	    case "IE":
-	    	    	browser = Utils.BrowserType.IE;
-	            	break;
-	            case "CHROME":
-	            	browser = Utils.BrowserType.CHROME;
-	            	break;
-	            default:
-	            	browser = Utils.BrowserType.FIREFOX;
-	            	break;
-	            	
-
-	    	}
-	    	
-	        //String webdriverTimeout = p.getProperty("WebdriverTimeout");
+	        driver = Utils.getWebDriver(browse, WebdriverTimeout); 
 	    	Long timeout = Long.valueOf(WebdriverTimeout);
-	        driver = Utils.getWebDriver(browser, timeout); 
-			
 			driver.get(baseurl);
 			LoginActions.init(driver, timeout);
 			MessagesActions.init(driver, timeout);

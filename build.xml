@@ -28,6 +28,8 @@
 	
 	
  <path id="cp">
+    <pathelement location="${libs.dir}\selendroid-client-0.13.0.jar"/>
+    <pathelement location="${libs.dir}\selendroid-standalone-0.13.0-with-dependencies.jar"/>
     <pathelement location="${libs.dir}\testng-6.8.8.jar"/>
     <pathelement location="${libs.dir}\json-simple-1.1.1.jar"/>
  	<pathelement location="${libs.dir}\selenium-java-2.44.0.jar"/>
@@ -140,9 +142,9 @@
    
  	<testng classpathref="cp"  delegateCommandSystemProperties="true" outputdir="${reports.dir}">
 	 	<sysproperty key="browse" value="${browse}"/>
-	   	<!--xmlfileset dir="${conf.dir}" includes="tstng.xml"/ -->
-	   	<xmlfileset dir="${smoke.dir}" includes="smoke.xml"/>
-	   	<!--xmlfileset dir="${regression.dir}" includes="regression.xml"/ -->
+	   	<!-- 	<xmlfileset dir="${conf.dir}" includes="tstng.xml"/> -->
+	   	 <xmlfileset dir="${conf.dir}" includes="smoke.xml"/> 
+	   	<!-- xmlfileset dir="${conf.dir}" includes="regression.xml"/ -->
 	     <!-- classfileset dir="${build.dir}" includes="example1/*.class"/ -->
  	</testng>
  	
